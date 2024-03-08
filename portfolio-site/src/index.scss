@@ -10,6 +10,7 @@ $accent-colour: #f4bd51;
 }
 
 body {
+  @include centerContent(column, center);
   margin: 0;
   background-color: $primary-colour;
 }
@@ -38,4 +39,11 @@ h6 {
       padding: 1em;
     }
   }
+}
+
+#page-container {
+  @include centerContent(column, center);
+  width: 1440px;
+  height: 100vh;
+  border: red 2px solid;
 }

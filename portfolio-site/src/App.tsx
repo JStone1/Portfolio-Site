@@ -1,11 +1,13 @@
 import "./App.scss";
 import Navbar from "./components/Navbar";
+import PageContainer from "./components/PageContainer";
 function App() {
   return (
     <>
       <Navbar />
-      <h1>Portfolio Site</h1>
-      <p>Test</p>
+      <PageContainer>
+        <Navbar />
+      </PageContainer>
     </>
   );
 }
