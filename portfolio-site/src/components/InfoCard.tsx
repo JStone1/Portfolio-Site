@@ -4,7 +4,7 @@ interface Props {
   desc: string;
 }
 
-export default function Card({ title, keyword, desc }: Props) {
+function InfoCard({ title, keyword, desc }: Props) {
   return (
     <>
       <div className="card">
@@ -13,7 +13,7 @@ export default function Card({ title, keyword, desc }: Props) {
         <hr className="divider"></hr>
         <h3>{desc}</h3>
       </div>
-      ;
     </>
   );
 }
+export default InfoCard;

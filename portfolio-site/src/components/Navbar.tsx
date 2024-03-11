@@ -1,14 +1,24 @@
-export default function Navbar() {
+import { NavLink } from "react-router-dom";
+
+function Navbar() {
   return (
     <>
-      <header className="navbar">
+      <header>
         <h2>John Stone</h2>
-        <ul>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
+        <nav>
+          <NavLink to="/">
+            <li>About</li>
+          </NavLink>
+          <NavLink to="/projects">
+            <li>Projects</li>
+          </NavLink>
+          <NavLink to="/contact">
+            <li>Contact</li>
+          </NavLink>
+        </nav>
       </header>
     </>
   );
 }
+
+export default Navbar;

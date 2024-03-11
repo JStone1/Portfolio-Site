@@ -10,7 +10,6 @@ $accent-colour: #f4bd51;
 }
 
 body {
-  @include centerContent(column, center);
   margin: 0;
   background-color: $primary-colour;
 }
@@ -26,7 +25,7 @@ h6 {
   font-size: 36px;
 }
 
-.navbar {
+header {
   @include centerContent(row, space-between);
   background-color: $primary-colour;
   color: $secondary-colour;
@@ -34,20 +33,29 @@ h6 {
     font-weight: 400;
     margin-left: 2em;
   }
-  ul {
-    @include horizontalList(1em);
-    margin-right: 2em;
-    li {
-      padding: 1em;
-    }
+}
+
+nav {
+  @include centerContent(row, center);
+  @include horizontalList(2em);
+  margin-right: 2em;
+  a {
+    text-decoration: none;
   }
 }
 
+nav a.active {
+  text-decoration: underline;
+}
+
 #page-container {
-  @include centerContent(column, center);
+  // @include centerContent(column, center);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   width: 1440px;
   height: 100vh;
-  border: red 2px solid;
+  // border: red 2px solid;
 }
 
 .card {
@@ -76,4 +84,8 @@ h6 {
   border-radius: 20px;
   color: $primary-colour;
   margin: -15px auto;
+}
+
+.profile-pic {
+  @include imgCard("./assets/profile-img.jpg");
 }
