@@ -1,0 +1,29 @@
+@import "src/index.scss";
+
+.card {
+  background-color: $accent-colour;
+  width: 480px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px #0d0f16;
+  text-align: center;
+  color: $primary-colour;
+
+  h1 {
+    padding: 0px 50px;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 24px;
+  }
+}
+
+.divider {
+  width: 65px;
+  border: 2px solid $primary-colour;
+  border-radius: 20px;
+  color: $primary-colour;
+  margin: -15px auto;
+}

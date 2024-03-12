@@ -1,0 +1,5 @@
+@import "src/index.scss";
+
+.profile-pic {
+  @include imgCard("../../assets/profile-img.jpg");
+}

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar/Navbar";
+import "./Layout.scss";
 
 interface Props {
   children: ReactNode;

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-@import "./_mixins.scss";
+@import "src/_mixins";
 
 $primary-colour: #272932;
 $secondary-colour: #e7ecef;
@@ -23,69 +23,4 @@ h6 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-size: 36px;
-}
-
-header {
-  @include centerContent(row, space-between);
-  background-color: $primary-colour;
-  color: $secondary-colour;
-  h2 {
-    font-weight: 400;
-    margin-left: 2em;
-  }
-}
-
-nav {
-  @include centerContent(row, center);
-  @include horizontalList(2em);
-  margin-right: 2em;
-  a {
-    text-decoration: none;
-  }
-}
-
-nav a.active {
-  text-decoration: underline;
-}
-
-#page-container {
-  // @include centerContent(column, center);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 1440px;
-  height: 100vh;
-  // border: red 2px solid;
-}
-
-.card {
-  background-color: $accent-colour;
-  width: 480px;
-  height: 350px;
-  border-radius: 10px;
-  box-shadow: 0px 8px 8px #0d0f16;
-  text-align: center;
-  color: $primary-colour;
-
-  h1 {
-    padding: 0px 50px;
-  }
-  h2 {
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 24px;
-  }
-}
-
-.divider {
-  width: 65px;
-  border: 2px solid $primary-colour;
-  border-radius: 20px;
-  color: $primary-colour;
-  margin: -15px auto;
-}
-
-.profile-pic {
-  @include imgCard("./assets/profile-img.jpg");
 }

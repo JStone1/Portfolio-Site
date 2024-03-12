@@ -1,0 +1,24 @@
+@import "src/index.scss";
+
+header {
+  @include centerContent(row, space-between);
+  background-color: $primary-colour;
+  color: $secondary-colour;
+  h2 {
+    font-weight: 400;
+    margin-left: 2em;
+  }
+}
+
+nav {
+  @include centerContent(row, center);
+  @include horizontalList(2em);
+  margin-right: 2em;
+  a {
+    text-decoration: none;
+  }
+}
+
+nav a.active {
+  text-decoration: underline;
+}

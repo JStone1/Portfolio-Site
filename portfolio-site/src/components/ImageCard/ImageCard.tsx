@@ -1,3 +1,5 @@
+import "./ImageCard.scss";
+
 function ImageCard() {
   return (
     <>

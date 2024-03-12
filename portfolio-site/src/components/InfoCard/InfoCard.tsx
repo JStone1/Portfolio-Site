@@ -1,3 +1,5 @@
+import "./InfoCard.scss";
+
 interface Props {
   title: string;
   keyword: string;
