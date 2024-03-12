@@ -1,6 +1,6 @@
-import Layout from "../components/Layout/Layout";
-import InfoCard from "../components/InfoCard/InfoCard";
-import ImageCard from "../components/ImageCard/ImageCard";
+import Layout from "@components/Layout/Layout";
+import InfoCard from "@components/InfoCard/InfoCard";
+import ImageCard from "@components/ImageCard/ImageCard";
 
 const Projects = () => {
   return (

@@ -1,0 +1,12 @@
+@import "src/styles/index.scss";
+
+footer {
+  @include centerContent(row, center);
+  background-color: $secondary-colour;
+  color: $primary-colour;
+  text-align: center;
+  h3 {
+    font-size: 24px;
+    margin: 3px;
+  }
+}

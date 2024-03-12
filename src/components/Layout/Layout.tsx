@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "@components/Navbar/Navbar";
+import Footer from "@components/Footer/Footer";
 import "./Layout.scss";
 
 interface Props {
@@ -11,6 +12,7 @@ function PageContainer({ children }: Props) {
     <>
       <Navbar />
       <div id="page-container">{children}</div>;
+      <Footer />
     </>
   );
 }

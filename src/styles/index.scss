@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
-@import "src/_mixins";
+@import "./mixins.scss";
 
+/* Colours & Box Shadows */
 $primary-colour: #272932;
 $secondary-colour: #e7ecef;
 $accent-colour: #f4bd51;
 
-* {
-  font-family: "Oxygen", sans-serif;
-}
+$bottom-box-shadow: 0px 8px 8px #0d0f16;
 
+/* Fonts */
 body {
   margin: 0;
   background-color: $primary-colour;
+}
+
+p,
+a {
+  font-family: "Oxygen", sans-serif;
 }
 
 h1,

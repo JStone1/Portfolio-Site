@@ -1,11 +1,1 @@
-@import "src/index.scss";
-
-#page-container {
-  // @include centerContent(column, center);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 1440px;
-  height: 100vh;
-  // border: red 2px solid;
-}
+@import "src/styles/index.scss";

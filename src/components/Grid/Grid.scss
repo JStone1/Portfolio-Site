@@ -1,0 +1,14 @@
+@import "src/styles/index.scss";
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 1440px;
+  height: 100vh;
+  border: red 2px solid;
+  margin: 0 auto;
+}
+
+.item1 {
+}
