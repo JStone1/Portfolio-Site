@@ -12,7 +12,7 @@ const Contact = () => {
           desc="Creative Computing Graduate"
         ></InfoCard>
         <ImageCard />
-      </Layout>{" "}
+      </Layout>
     </>
   );
 };

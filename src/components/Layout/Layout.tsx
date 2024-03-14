@@ -11,7 +11,7 @@ function PageContainer({ children }: Props) {
   return (
     <>
       <Navbar />
-      <div id="page-container">{children}</div>;
+      <div id="page-container">{children}</div>
       <Footer />
     </>
   );

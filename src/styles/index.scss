@@ -11,12 +11,13 @@ $bottom-box-shadow: 0px 8px 8px #0d0f16;
 /* Fonts */
 body {
   margin: 0;
-  background-color: $primary-colour;
+  background-color: $secondary-colour;
 }
 
 p,
 a {
   font-family: "Oxygen", sans-serif;
+  font-size: clamp(0.8rem, 1vw + 1rem, 1rem);
 }
 
 h1,
@@ -27,5 +28,5 @@ h5,
 h6 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(1rem, 2.5vw + 1rem, 2rem);
 }

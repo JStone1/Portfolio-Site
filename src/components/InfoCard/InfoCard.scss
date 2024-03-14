@@ -18,6 +18,12 @@
   h3 {
     font-size: 24px;
   }
+  @include breakpoint(0px, 600px) {
+    width: 400px;
+  }
+  @include breakpoint(0px, 425px) {
+    width: 350px;
+  }
 }
 
 .divider {
