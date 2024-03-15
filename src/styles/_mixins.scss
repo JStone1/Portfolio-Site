@@ -22,6 +22,24 @@
   }
 }
 
+@mixin verticalList($topMargin) {
+  @include centerContent(column, center);
+  list-style: none;
+  text-decoration: underline;
+  li {
+    margin: $topMargin 0px;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a {
+    &:visited {
+      color: inherit;
+    }
+  }
+}
+
 @mixin breakpoint($minwidth, $maxwidth) {
   @media screen and (min-width: $minwidth) and (max-width: $maxwidth) {
     @content;

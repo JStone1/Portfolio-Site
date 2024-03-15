@@ -7,7 +7,7 @@ interface Props {
 }
 
 function Hero({ isReverse }: Props) {
-  let reverse;
+  let reverse = "";
 
   if (isReverse) reverse = "reverse";
   return (

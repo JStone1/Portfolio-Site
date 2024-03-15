@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import Navbar from "@components/Navbar/Navbar";
 import Footer from "@components/Footer/Footer";
 import "./Layout.scss";
+import Header from "@components/Header/Header";
 
 interface Props {
   children: ReactNode;
@@ -10,7 +10,7 @@ interface Props {
 function PageContainer({ children }: Props) {
   return (
     <>
-      <Navbar />
+      <Header />
       <div id="page-container">{children}</div>
       <Footer />
     </>

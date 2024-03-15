@@ -1,0 +1,50 @@
+@import "src/styles/index.scss";
+
+nav {
+  @include centerContent(row, center);
+  margin-right: 5%;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.nav-item-container {
+  @include centerContent(row, center);
+  @include horizontalList(2em);
+  a {
+    text-decoration: none;
+  }
+  @include breakpoint(0px, 600px) {
+    display: none;
+  }
+}
+
+.mobile-nav-item-container {
+  @include verticalList(1em);
+  background-color: $primary-colour;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  transition: 1s;
+}
+
+.hamburger-container {
+  @include breakpoint(600px, 2800px) {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+  top: -250px;
+}
+
+.fixed {
+  position: fixed;
+  right: 0;
+  transform: translate(-50%, 0);
+}
