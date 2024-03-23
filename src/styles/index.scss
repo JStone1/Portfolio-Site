@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 @import "./mixins.scss";
 
+// * {
+//   border: 1px solid red;
+// }
+
 /* Colours & Box Shadows */
 $primary-colour: #272932;
 $secondary-colour: #e7ecef;
@@ -33,4 +37,8 @@ h6 {
   font-family: "Titillium Web", sans-serif;
   font-weight: 400;
   font-size: clamp(0.8rem, 2.5vw + 1rem, 2rem);
+}
+
+h2 {
+  font-weight: 700;
 }
