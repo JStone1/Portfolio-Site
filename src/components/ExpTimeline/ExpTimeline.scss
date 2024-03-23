@@ -1,0 +1,47 @@
+@import "src/styles/index.scss";
+
+.item {
+  text-align: center;
+}
+
+.line {
+  height: 64px;
+  width: 4px;
+  background-color: $primary-colour;
+}
+
+.title {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  color: $primary-colour;
+}
+
+.date {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+}
+
+.dot {
+  width: 32px;
+  height: 32px;
+  margin: 0px 40px;
+  background-color: $primary-colour;
+  border: solid 3px $primary-colour;
+  transition: 0.5s;
+  &:hover {
+    background-color: $accent-colour;
+    cursor: pointer;
+  }
+  @include breakpoint(0px, 600px) {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.outlined {
+  background-color: transparent;
+  &:hover {
+    background-color: $accent-colour;
+  }
+}

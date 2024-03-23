@@ -1,6 +1,7 @@
 import Layout from "@components/Layout/Layout";
 import Hero from "@components/Hero/Hero";
 import SectionTitle from "@components/SectionTitle/SectionTitle";
+import ExpTimeline from "@components/ExpTimeline/ExpTimeline";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
           title="About me"
           desc="Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web..."
         ></SectionTitle>
+        <ExpTimeline></ExpTimeline>
       </Layout>
     </>
   );
