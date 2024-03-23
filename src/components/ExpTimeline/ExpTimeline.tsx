@@ -6,13 +6,14 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import { NavLink } from "react-router-dom";
 
 interface Props {}
 
 function ExpTimeline({}: Props) {
   return (
     <>
-      <Timeline>
+      <Timeline className="timeline-container">
         <TimelineItem className="item">
           <TimelineOppositeContent className="date" color="text.secondary">
             2019 - 2023
@@ -50,7 +51,9 @@ function ExpTimeline({}: Props) {
             Present
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot className="dot outlined" />
+            <NavLink to="/contact">
+              <TimelineDot className="dot outlined" />
+            </NavLink>
           </TimelineSeparator>
           <TimelineContent className="title">
             Currently looking!
