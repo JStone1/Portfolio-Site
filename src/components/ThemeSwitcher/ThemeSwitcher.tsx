@@ -11,7 +11,7 @@ function ThemeSwitcher({}: Props) {
           <label className="visually-hidden" htmlFor="theme">
             Orange
           </label>
-          <input type="radio" name="theme" id="orange" checked />
+          <input type="radio" name="theme" id="orange" defaultChecked />
           <label className="visually-hidden" htmlFor="theme">
             Green
           </label>

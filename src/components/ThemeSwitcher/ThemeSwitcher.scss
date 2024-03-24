@@ -1,1 +1,66 @@
 @import "src/styles/index.scss";
+
+/* Styling for theme switcher */
+
+.theme-picker > fieldset {
+  @include centerContent(row, center);
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 30px;
+  background-color: $secondary-colour;
+}
+
+.theme-picker input[type="radio"] {
+  appearance: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 0.2em solid $primary-colour;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#orange {
+  border-color: $accent-colour-orange;
+  background-color: $accent-colour-orange;
+  &:checked {
+    border-color: $primary-colour;
+    background-color: $accent-colour-orange;
+  }
+  &:hover {
+    border: 0.2em solid $primary-colour;
+  }
+}
+
+#green {
+  border-color: $accent-colour-green;
+  background-color: $accent-colour-green;
+  &:checked {
+    border-color: $primary-colour;
+    background-color: $accent-colour-green;
+  }
+  &:hover {
+    border: 0.2em solid $primary-colour;
+  }
+}
+
+#pink {
+  border-color: $accent-colour-pink;
+  background-color: $accent-colour-pink;
+  &:checked {
+    border-color: $primary-colour;
+    background-color: $accent-colour-pink;
+  }
+  &:hover {
+    border: 0.2em solid $primary-colour;
+  }
+}
+
+:root:has(#orange:checked) {
+  @include theme($accent-colour-orange);
+}
+:root:has(#green:checked) {
+  @include theme($accent-colour-green);
+}
+:root:has(#pink:checked) {
+  @include theme($accent-colour-pink);
+}

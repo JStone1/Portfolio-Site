@@ -14,11 +14,14 @@ function Hero({ isReverse }: Props) {
     <>
       <section>
         <div className={"hero-container " + reverse}>
-          <InfoCard
-            title="Web Developer and Creative Technologist"
-            keyword="John Stone"
-            desc="Creative Computing Graduate"
-          />
+          <div className="inner-container">
+            <InfoCard
+              title="Web Developer and Creative Technologist"
+              keyword="John Stone"
+              desc="Creative Computing Graduate"
+            />
+            <ThemeSwitcher></ThemeSwitcher>
+          </div>
           <div className="hero-image-container"></div>
         </div>
       </section>

@@ -51,8 +51,8 @@ function ExpTimeline({}: Props) {
             Present
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <NavLink to="/contact">
-              <TimelineDot className="dot outlined" />
+            <NavLink style={{ textDecoration: "none" }} to="/contact">
+              <TimelineDot className="dot outlined"></TimelineDot>
             </NavLink>
           </TimelineSeparator>
           <TimelineContent className="title">

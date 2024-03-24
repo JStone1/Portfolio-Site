@@ -49,6 +49,9 @@
 /* Dicates all colour styling after switching e.g. buttons and cards */
 
 @mixin theme($accent) {
+  * {
+    transition: 0.5s;
+  }
   .card {
     background-color: $accent;
   }

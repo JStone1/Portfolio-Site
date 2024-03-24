@@ -7,7 +7,6 @@ function Header() {
     <>
       <header>
         <h2>John Stone</h2>
-        <ThemeSwitcher></ThemeSwitcher>
         <Nav />
       </header>
     </>

@@ -17,17 +17,19 @@
   }
 }
 
+.inner-container {
+  @include centerContent(column, center);
+  gap: 1em;
+  margin-bottom: 100px;
+  @include breakpoint(0px, 1024px) {
+    margin-bottom: 0px;
+  }
+}
+
 .reverse {
   flex-direction: row-reverse;
   @include breakpoint(0px, 1024px) {
     flex-direction: column;
-  }
-}
-
-.card {
-  margin-bottom: 100px;
-  @include breakpoint(0px, 1024px) {
-    margin-bottom: 0px;
   }
 }
 
