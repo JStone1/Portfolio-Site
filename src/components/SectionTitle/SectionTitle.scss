@@ -3,9 +3,19 @@
 .title-container {
   @include centerContent(column, center);
   text-align: center;
-  width: 40%;
+  width: 100%;
   margin: 300px auto 0px auto;
-  @include breakpoint(0px, 1024px) {
-    width: 75%;
+  p {
+    width: 40%;
   }
+  @include breakpoint(0px, 1024px) {
+    p {
+      width: 75%;
+    }
+  }
+}
+
+.container-bg {
+  background-color: $primary-colour;
+  color: $secondary-colour;
 }

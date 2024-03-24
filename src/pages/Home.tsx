@@ -12,12 +12,14 @@ const Home = () => {
         <SectionTitle
           title="About me"
           desc="Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web..."
+          background={false}
         ></SectionTitle>
         <ExpTimeline></ExpTimeline>
         <ContactCTA
           title="Want to work together?"
           prompt="Get in touch"
         ></ContactCTA>
+        <SectionTitle title="My Toolkit" background={true}></SectionTitle>
       </Layout>
     </>
   );

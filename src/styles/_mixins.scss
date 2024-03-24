@@ -45,3 +45,29 @@
     @content;
   }
 }
+
+/* Dicates all colour styling after switching e.g. buttons and cards */
+
+@mixin theme($accent) {
+  .card {
+    background-color: $accent;
+  }
+  button {
+    background-color: $accent;
+    border-color: $accent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+  .dot {
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  .outlined {
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}

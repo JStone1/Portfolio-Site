@@ -33,7 +33,6 @@
   border: solid 3px $primary-colour;
   transition: 0.5s;
   &:hover {
-    background-color: $accent-colour;
     cursor: pointer;
     transform: scale(1.1);
   }
@@ -46,7 +45,4 @@
 
 .outlined {
   background-color: transparent;
-  &:hover {
-    background-color: $accent-colour;
-  }
 }

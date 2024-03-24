@@ -8,7 +8,10 @@
 /* Colours & Box Shadows */
 $primary-colour: #272932;
 $secondary-colour: #e7ecef;
-$accent-colour: #f4bd51;
+
+$accent-colour-orange: #f4bd51;
+$accent-colour-green: #00b295;
+$accent-colour-pink: #f1a5c9;
 
 $bottom-box-shadow: 0px 8px 8px #0d0f16;
 
@@ -41,4 +44,71 @@ h6 {
 
 h2 {
   font-weight: 700;
+}
+
+/* Hides label styling for theme switch input form */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Styling for theme switcher */
+
+.theme-picker > fieldset {
+  @include centerContent(row, center);
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 30px;
+  background-color: $secondary-colour;
+}
+
+.theme-picker input[type="radio"] {
+  appearance: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 0.2em solid $primary-colour;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#orange {
+  border-color: $accent-colour-orange;
+  background-color: $accent-colour-orange;
+  &:checked {
+    border-color: $primary-colour;
+    background-color: $accent-colour-orange;
+  }
+}
+
+#green {
+  border-color: $accent-colour-green;
+  background-color: $accent-colour-green;
+  &:checked {
+    border-color: $primary-colour;
+    background-color: $accent-colour-green;
+  }
+}
+
+#pink {
+  border-color: $accent-colour-pink;
+  background-color: $accent-colour-pink;
+  &:checked {
+    border-color: $primary-colour;
+    background-color: $accent-colour-pink;
+  }
+}
+
+:root:has(#orange:checked) {
+  @include theme($accent-colour-orange);
+}
+:root:has(#green:checked) {
+  @include theme($accent-colour-green);
+}
+:root:has(#pink:checked) {
+  @include theme($accent-colour-pink);
 }

@@ -1,6 +1,6 @@
 import "./Hero.scss";
 import InfoCard from "@components/InfoCard/InfoCard";
-import ImageCard from "@components/ImageCard/ImageCard";
+import ThemeSwitcher from "@components/ThemeSwitcher/ThemeSwitcher";
 
 interface Props {
   isReverse?: boolean;
