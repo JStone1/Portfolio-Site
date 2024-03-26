@@ -67,10 +67,15 @@
       background-color: $accent;
     }
   }
-
   .outlined {
     &:hover {
       background-color: $accent;
+    }
+  }
+  .language-icon {
+    color: $accent;
+    &:hover {
+      color: $secondary-colour;
     }
   }
 }

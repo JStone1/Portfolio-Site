@@ -1,12 +1,14 @@
+import { ReactNode } from "react";
 import "./SectionTitle.scss";
 
 interface Props {
   title: string;
   desc?: string;
   background: boolean;
+  children?: ReactNode;
 }
 
-function SectionTitle({ title, desc, background }: Props) {
+function SectionTitle({ title, desc, background, children }: Props) {
   let containerBg = "";
 
   background ? (containerBg = "container-bg") : (containerBg = "");
@@ -16,6 +18,7 @@ function SectionTitle({ title, desc, background }: Props) {
       <div className={"title-container " + containerBg}>
         <h2>{title}</h2>
         <p>{desc}</p>
+        {children}
       </div>
     </>
   );
