@@ -14,7 +14,7 @@ function ExpTimeline({}: Props) {
   return (
     <>
       <Timeline className="timeline-container">
-        <TimelineItem className="item">
+        <TimelineItem>
           <TimelineOppositeContent className="date" color="text.secondary">
             2019 - 2023
           </TimelineOppositeContent>
@@ -22,11 +22,16 @@ function ExpTimeline({}: Props) {
             <TimelineDot className="dot" />
             <TimelineConnector className="line" />
           </TimelineSeparator>
-          <TimelineContent className="title">
-            Bath Spa University
+          <TimelineContent className="timeline-item-container">
+            <h2 className="timeline-title">Bath Spa University</h2>
+            <p className="timeline-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor.
+            </p>
           </TimelineContent>
         </TimelineItem>
-        <TimelineItem className="item">
+        <TimelineItem>
           <TimelineOppositeContent className="date" color="text.secondary">
             July 2023
           </TimelineOppositeContent>
@@ -34,9 +39,16 @@ function ExpTimeline({}: Props) {
             <TimelineDot className="dot" color="primary" />
             <TimelineConnector className="line" />
           </TimelineSeparator>
-          <TimelineContent className="title">Graduation</TimelineContent>
+          <TimelineContent className="timeline-item-container">
+            <h2 className="timeline-title">Graduation</h2>
+            <p className="timeline-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor.
+            </p>
+          </TimelineContent>
         </TimelineItem>
-        <TimelineItem className="item">
+        <TimelineItem>
           <TimelineOppositeContent className="date" color="text.secondary">
             Aug-Nov 2023
           </TimelineOppositeContent>
@@ -44,19 +56,30 @@ function ExpTimeline({}: Props) {
             <TimelineDot className="dot" color="secondary" />
             <TimelineConnector className="line" />
           </TimelineSeparator>
-          <TimelineContent className="title">Internship</TimelineContent>
+          <TimelineContent className="timeline-item-container">
+            <h2 className="timeline-title">Freelance</h2>
+            <p className="timeline-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor.
+            </p>
+          </TimelineContent>
         </TimelineItem>
-        <TimelineItem className="item">
+        <TimelineItem>
           <TimelineOppositeContent className="date" color="text.secondary">
-            Present
+            Now
           </TimelineOppositeContent>
           <TimelineSeparator>
             <NavLink style={{ textDecoration: "none" }} to="/contact">
               <TimelineDot className="dot outlined"></TimelineDot>
             </NavLink>
           </TimelineSeparator>
-          <TimelineContent className="title">
-            Currently looking!
+          <TimelineContent className="timeline-item-container">
+            <h2 className="timeline-title">Currently looking</h2>
+            <p className="timeline-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
+            </p>
           </TimelineContent>
         </TimelineItem>
       </Timeline>
