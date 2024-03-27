@@ -13,6 +13,8 @@
     cursor: pointer;
     &:hover {
       text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 0.5em;
     }
   }
   a {
@@ -51,6 +53,12 @@
 @mixin theme($accent) {
   * {
     transition: 0.5s;
+  }
+  nav a.active {
+    text-decoration-color: $accent;
+    &:hover {
+      text-decoration-color: $accent;
+    }
   }
   .card {
     background-color: $accent;

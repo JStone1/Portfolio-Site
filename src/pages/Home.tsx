@@ -16,9 +16,9 @@ const Home = () => {
         ></SectionTitle>
         <ExpTimeline></ExpTimeline>
         <ContactCTA
-          title="Want to work together?"
-          prompt="Get in touch"
-          link="contact"
+          title="See my previous projects"
+          prompt="Explore work"
+          link="projects"
         ></ContactCTA>
         <SectionTitle title="My Toolkit" background={true}>
           <ToolkitList></ToolkitList>
@@ -27,12 +27,7 @@ const Home = () => {
           title="Interested in what you see?"
           prompt="Let's chat!"
           link="contact"
-          desc="Please get in touch and we can make something great together!"
-        ></ContactCTA>
-        <ContactCTA
-          title="See my previous projects"
-          prompt="Explore work"
-          link="projects"
+          desc="Please don't hesitate to get in touch and we can make something great together!"
         ></ContactCTA>
       </Layout>
     </>

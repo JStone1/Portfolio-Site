@@ -18,5 +18,8 @@
 .container-bg {
   background-color: $primary-colour;
   color: $secondary-colour;
-  margin: 150px auto 150px auto;
+  margin: 250px auto 250px auto;
+  @include breakpoint(0px, 600px) {
+    margin-bottom: 100px;
+  }
 }

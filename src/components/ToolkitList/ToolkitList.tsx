@@ -10,8 +10,8 @@ function ToolkitList({}: Props) {
         <LanguageIcon lang="javascript"></LanguageIcon>
         <LanguageIcon lang="css3"></LanguageIcon>
         <LanguageIcon lang="html5"></LanguageIcon>
-        <LanguageIcon lang="cplusplus"></LanguageIcon>
         <LanguageIcon lang="wordpress"></LanguageIcon>
+        <LanguageIcon lang="cplusplus"></LanguageIcon>
         <LanguageIcon lang="sass"></LanguageIcon>
         <LanguageIcon lang="react"></LanguageIcon>
         <LanguageIcon lang="figma"></LanguageIcon>

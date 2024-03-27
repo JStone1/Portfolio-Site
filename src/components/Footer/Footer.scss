@@ -1,13 +1,27 @@
 @import "src/styles/index.scss";
 
 footer {
-  @include centerContent(row, center);
-  background-color: $secondary-colour;
-  color: $primary-colour;
+  @include centerContent(row, space-between);
+  background-color: $primary-colour;
+  color: $secondary-colour;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 250px;
+  padding: 0px 50px;
   h3 {
     font-size: 24px;
-    margin: 3px;
+  }
+  @include breakpoint(0px, 600px) {
+    margin-top: 100px;
+  }
+}
+
+.social-container {
+  @include centerContent(row, space-around);
+  gap: 2em;
+  a {
+    text-decoration: none;
+  }
+  i {
+    font-size: 36px;
   }
 }

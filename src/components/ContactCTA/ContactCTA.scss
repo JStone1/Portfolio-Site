@@ -10,6 +10,7 @@
   border-radius: 10px;
   margin: 0 auto 50px;
   h3 {
+    font-size: clamp(0.8rem, 2.5vw + 1rem, 1.6rem);
   }
   @include breakpoint(0px, 600px) {
     @include centerContent(column, space-around);
@@ -53,6 +54,7 @@
 
 .cta-desc {
   width: 60%;
+  font-size: 18px;
   @include breakpoint(0px, 600px) {
     width: 100%;
   }

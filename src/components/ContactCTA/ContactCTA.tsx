@@ -15,10 +15,15 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
         <h3>{title}</h3>
         <div className="info-container">
           <div className="cta-image-container">
-            <a className="cta-image" href="https://github.com/JStone1">
+            <a
+              target="blank"
+              className="cta-image"
+              href="https://github.com/JStone1"
+            >
               <i className={"devicon-github-plain language-icon"}></i>
             </a>
             <a
+              target="blank"
               className="cta-image"
               href="https://www.linkedin.com/in/john-stone-50065618b"
             >
