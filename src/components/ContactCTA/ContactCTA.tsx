@@ -33,7 +33,7 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
           <p className="cta-desc">{desc}</p>
         </div>
         <NavLink className={"cta-button-container"} to={"/" + link}>
-          <button className="cta-button">{prompt}</button>
+          <button>{prompt}</button>
         </NavLink>
       </div>
     );
@@ -44,7 +44,7 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
       <div className="cta-container">
         <h3>{title}</h3>
         <NavLink to={"/" + link}>
-          <button className="cta-button">{prompt}</button>
+          <button>{prompt}</button>
         </NavLink>
       </div>
     </>

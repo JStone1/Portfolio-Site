@@ -17,7 +17,15 @@
 
 .timeline-desc {
   margin-bottom: 150px;
-  width: 28ch;
+  width: 34ch;
+  @include breakpoint(0px, 600px) {
+    width: 20ch;
+  }
+}
+
+.highlight-text {
+  font-weight: 700;
+  cursor: default;
 }
 
 .line {

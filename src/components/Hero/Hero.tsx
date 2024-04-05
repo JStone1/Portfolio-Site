@@ -3,10 +3,14 @@ import InfoCard from "@components/InfoCard/InfoCard";
 import ThemeSwitcher from "@components/ThemeSwitcher/ThemeSwitcher";
 
 interface Props {
+  title: string;
+  keyword: string;
+  desc: string;
+  imageURL: string;
   isReverse?: boolean;
 }
 
-function Hero({ isReverse }: Props) {
+function Hero({ isReverse, title, keyword, desc, imageURL }: Props) {
   let reverse = "";
 
   if (isReverse) reverse = "reverse";
@@ -15,14 +19,13 @@ function Hero({ isReverse }: Props) {
       <section>
         <div className={"hero-container " + reverse}>
           <div className="inner-container">
-            <InfoCard
-              title="Web Developer and Creative Technologist"
-              keyword="John Stone"
-              desc="Creative Computing Graduate"
-            />
+            <InfoCard title={title} keyword={keyword} desc={desc} />
             <ThemeSwitcher></ThemeSwitcher>
           </div>
-          <div className="hero-image-container"></div>
+          <div
+            style={{ backgroundImage: `url(${imageURL})` }}
+            className="hero-image-container"
+          ></div>
         </div>
       </section>
     </>

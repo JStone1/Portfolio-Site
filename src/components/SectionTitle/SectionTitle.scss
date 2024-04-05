@@ -8,6 +8,9 @@
   p {
     width: 40%;
   }
+  h2 {
+    font-weight: 700;
+  }
   @include breakpoint(0px, 1024px) {
     p {
       width: 75%;

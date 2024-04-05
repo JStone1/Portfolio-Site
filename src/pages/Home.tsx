@@ -8,10 +8,19 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <Hero></Hero>
+        <Hero
+          title="Web Developer and Creative Technologist"
+          keyword="John Stone"
+          desc="Creative Computing Graduate"
+          imageURL="src/assets/profile-img.jpg"
+        ></Hero>
         <SectionTitle
           title="About me"
-          desc="Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web...Hello! My name is John and I make things on the web..."
+          desc={[
+            "Hello! ",
+            <span className="highlight-text">My name is John</span>,
+            ", and I create experiences on the web. Specialising in front-end development, I",
+          ]}
           background={false}
         ></SectionTitle>
         <ExpTimeline></ExpTimeline>

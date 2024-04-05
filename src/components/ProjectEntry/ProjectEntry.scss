@@ -1,0 +1,5 @@
+@import "src/styles/index.scss";
+
+.project-entry-container {
+  @include centerContent(row, center);
+}

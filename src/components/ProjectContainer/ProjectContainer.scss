@@ -1,0 +1,7 @@
+@import "src/styles/index.scss";
+
+.project-container {
+  @include centerContent(column, center);
+  gap: 2em;
+  margin-top: 30px;
+}

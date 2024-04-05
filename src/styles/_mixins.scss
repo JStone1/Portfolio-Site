@@ -86,4 +86,16 @@
       color: $secondary-colour;
     }
   }
+  .highlight-text {
+    background: linear-gradient(to bottom, ($accent) 0%, ($accent) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    &:hover {
+      background-size: 2px 50px;
+    }
+  }
+  .project-card-container {
+    border-color: $accent;
+  }
 }

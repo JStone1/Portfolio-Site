@@ -2,13 +2,17 @@ import "./LanguageIcon.scss";
 
 interface Props {
   lang: string;
+  size?: number;
 }
 
-function LanguageIcon({ lang }: Props) {
+function LanguageIcon({ lang, size }: Props) {
   return (
     <>
       <span>
-        <i className={`devicon-${lang}-plain language-icon`}></i>
+        <i
+          style={{ fontSize: size }}
+          className={`devicon-${lang}-plain language-icon`}
+        ></i>
       </span>
     </>
   );

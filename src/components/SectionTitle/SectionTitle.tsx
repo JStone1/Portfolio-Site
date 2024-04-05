@@ -3,7 +3,7 @@ import "./SectionTitle.scss";
 
 interface Props {
   title: string;
-  desc?: string;
+  desc?: string | ReactNode;
   background: boolean;
   children?: ReactNode;
 }
