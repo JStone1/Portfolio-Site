@@ -11,7 +11,7 @@ function LanguageIcon({ lang, size }: Props) {
       <span>
         <i
           style={{ fontSize: size }}
-          className={`devicon-${lang}-plain language-icon`}
+          className={`devicon-${lang} language-icon`}
         ></i>
       </span>
     </>
