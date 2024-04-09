@@ -13,7 +13,7 @@ const Home = () => {
           keyword="John Stone"
           desc="Creative Computing Graduate"
           imageURL="src/assets/profile-img.jpg"
-        ></Hero>
+        />
         <SectionTitle
           title="About me"
           desc={[
@@ -22,13 +22,13 @@ const Home = () => {
             ", and I create experiences on the web. Specialising in front-end development, I",
           ]}
           background={false}
-        ></SectionTitle>
-        <ExpTimeline></ExpTimeline>
+        />
+        <ExpTimeline />
         <ContactCTA
           title="See my previous projects"
           prompt="Explore work"
           link="projects"
-        ></ContactCTA>
+        />
         <SectionTitle title="My Toolkit" background={true}>
           <ToolkitList></ToolkitList>
         </SectionTitle>
@@ -37,7 +37,7 @@ const Home = () => {
           prompt="Let's chat!"
           link="contact"
           desc="Please don't hesitate to get in touch and we can make something great together!"
-        ></ContactCTA>
+        />
       </Layout>
     </>
   );

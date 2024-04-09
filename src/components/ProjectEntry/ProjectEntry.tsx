@@ -1,18 +1,26 @@
 import "./ProjectEntry.scss";
-import ProjectCard from "@components/ProjectCard/ProjectCard";
+import LanguageIcon from "@components/LanguageIcon/LanguageIcon";
+import ExternalBtn from "@components/ExternalBtn/ExternalBtn";
 
 interface Props {
   title: string;
   desc: string;
-  languages?: object;
-  liveSite?: boolean;
-  github?: boolean;
+  languages: string[];
+  siteURL?: string;
+  gitURL?: string;
 }
 
-function ProjectEntry({ title, desc, liveSite, github, languages }: Props) {
+function ProjectEntry({ title, desc, languages, siteURL, gitURL }: Props) {
+  let projectLanguages = {
+    lang1: languages[0],
+    lang2: languages[1],
+    lang3: languages[2],
+    lang4: languages[3],
+  };
+
   return (
     <>
-      <div className="project-entry-container">
+      <article className="project-entry-container">
         <div
           style={{
             width: "100px",
@@ -22,8 +30,21 @@ function ProjectEntry({ title, desc, liveSite, github, languages }: Props) {
         >
           img
         </div>
-        <ProjectCard title={title} desc={desc}></ProjectCard>
-      </div>
+        <div className="project-card-container">
+          <h2>{title}</h2>
+          <p>{desc}</p>
+          <div className="project-language-container">
+            <LanguageIcon lang={projectLanguages.lang1}></LanguageIcon>
+            <LanguageIcon lang={projectLanguages.lang2}></LanguageIcon>
+            <LanguageIcon lang={projectLanguages.lang3}></LanguageIcon>
+            <LanguageIcon lang={projectLanguages.lang4}></LanguageIcon>
+          </div>
+          <div className="project-button-container">
+            <ExternalBtn url={siteURL} text="Live site"></ExternalBtn>
+            <ExternalBtn url={gitURL} text="Github"></ExternalBtn>
+          </div>
+        </div>
+      </article>
     </>
   );
 }

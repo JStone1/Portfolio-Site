@@ -3,3 +3,54 @@
 .project-entry-container {
   @include centerContent(row, center);
 }
+
+.project-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: $primary-colour;
+  color: $secondary-colour;
+  padding: 30px 3%;
+  width: 80%;
+  border-left-style: solid;
+  border-left-width: 30px;
+  border-radius: 20px;
+  h2 {
+    margin: 0;
+  }
+  p {
+    // width: 80%;
+    font-size: clamp(0.7rem, 1vw + 1rem, 1.2rem);
+  }
+  @include breakpoint(0px, 600px) {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-left-style: none;
+    border-left-width: none;
+    border-top-width: 30px;
+    border-top-style: solid;
+  }
+}
+
+.project-language-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+  margin: 20px 0px;
+  @include breakpoint(0px, 600px) {
+    gap: 2em;
+
+    i {
+      font-size: 36px;
+    }
+  }
+}
+
+.project-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+}

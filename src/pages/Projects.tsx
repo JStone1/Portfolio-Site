@@ -1,6 +1,7 @@
 import Layout from "@components/Layout/Layout";
 import Hero from "@components/Hero/Hero";
 import ProjectContainer from "@components/ProjectContainer/ProjectContainer";
+import SectionTitle from "@components/SectionTitle/SectionTitle";
 
 const Projects = () => {
   return (
@@ -12,8 +13,13 @@ const Projects = () => {
           desc="A collection of commercial and university projects"
           imageURL="src/assets/mountain.jpg"
           isReverse={true}
-        ></Hero>
-        <ProjectContainer></ProjectContainer>
+        />
+        <SectionTitle
+          title="Projects"
+          desc="Here's a collection of projects so far, this will grow in the future !"
+          background={false}
+        />
+        <ProjectContainer />
       </Layout>
     </>
   );
