@@ -5,12 +5,13 @@ import ExternalBtn from "@components/ExternalBtn/ExternalBtn";
 interface Props {
   title: string;
   desc: string;
+  img: string;
   languages: string[];
   siteURL?: string;
   gitURL?: string;
 }
 
-function ProjectEntry({ title, desc, languages, siteURL, gitURL }: Props) {
+function ProjectEntry({ title, desc, img, languages, siteURL, gitURL }: Props) {
   let projectLanguages = {
     lang1: languages[0],
     lang2: languages[1],
@@ -20,31 +21,28 @@ function ProjectEntry({ title, desc, languages, siteURL, gitURL }: Props) {
 
   return (
     <>
-      <article className="project-entry-container">
-        <div
-          style={{
-            width: "100px",
-            height: "100px",
-            backgroundColor: "lightblue",
-          }}
-        >
-          img
-        </div>
-        <div className="project-card-container">
-          <h2>{title}</h2>
-          <p>{desc}</p>
-          <div className="project-language-container">
-            <LanguageIcon lang={projectLanguages.lang1}></LanguageIcon>
-            <LanguageIcon lang={projectLanguages.lang2}></LanguageIcon>
-            <LanguageIcon lang={projectLanguages.lang3}></LanguageIcon>
-            <LanguageIcon lang={projectLanguages.lang4}></LanguageIcon>
+      <div className="project-entry-container">
+        <article className="project-entry">
+          <div
+            className="project-image"
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+          <div className="project-card">
+            <h2>{title}</h2>
+            <p>{desc}</p>
+            <div className="project-languages">
+              <LanguageIcon lang={projectLanguages.lang1}></LanguageIcon>
+              <LanguageIcon lang={projectLanguages.lang2}></LanguageIcon>
+              <LanguageIcon lang={projectLanguages.lang3}></LanguageIcon>
+              <LanguageIcon lang={projectLanguages.lang4}></LanguageIcon>
+            </div>
+            <div className="project-buttons">
+              <ExternalBtn url={siteURL} text="Live site"></ExternalBtn>
+              <ExternalBtn url={gitURL} text="Github"></ExternalBtn>
+            </div>
           </div>
-          <div className="project-button-container">
-            <ExternalBtn url={siteURL} text="Live site"></ExternalBtn>
-            <ExternalBtn url={gitURL} text="Github"></ExternalBtn>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </>
   );
 }

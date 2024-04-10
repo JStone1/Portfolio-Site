@@ -1,56 +1,84 @@
 @import "src/styles/index.scss";
 
-.project-entry-container {
-  @include centerContent(row, center);
+.project-entry {
+  display: grid;
+  justify-items: center;
 }
 
-.project-card-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+.project-image {
+  width: calc(75% + 10%);
+  min-height: 250px;
+  flex-grow: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include breakpoint(0px, 600px) {
+    height: 150px;
+  }
+}
+
+.project-entry-container {
+  display: grid;
+  align-self: stretch;
+}
+
+.project-card {
+  display: grid;
   background-color: $primary-colour;
   color: $secondary-colour;
-  padding: 30px 3%;
-  width: 80%;
-  border-left-style: solid;
-  border-left-width: 30px;
-  border-radius: 20px;
+  padding: 25px 5%;
+  width: 75%;
+  border-top-style: solid;
+  border-top-width: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   h2 {
     margin: 0;
   }
   p {
-    // width: 80%;
+    width: 100%;
+    max-width: 60ch;
+    text-wrap: wrap;
     font-size: clamp(0.7rem, 1vw + 1rem, 1.2rem);
+    margin-bottom: 0;
   }
   @include breakpoint(0px, 600px) {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-left-style: none;
-    border-left-width: none;
-    border-top-width: 30px;
-    border-top-style: solid;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    // border-left-style: none;
+    // border-left-width: none;
+    // border-top-width: 30px;
+    // border-top-style: solid;
   }
 }
 
-.project-language-container {
+.project-languages {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 25px 0px;
+  width: 100%;
   gap: 3em;
-  margin: 20px 0px;
-  @include breakpoint(0px, 600px) {
+  @include breakpoint(0px, 1024px) {
     gap: 2em;
-
     i {
       font-size: 36px;
     }
   }
 }
 
-.project-button-container {
+.project-buttons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2em;
+  width: 100%;
+  gap: 5em;
+  @include breakpoint(0px, 400px) {
+    gap: 1em;
+    button {
+      padding: 10px 10px;
+    }
+  }
 }

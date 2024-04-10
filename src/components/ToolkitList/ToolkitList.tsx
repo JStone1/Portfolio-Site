@@ -7,14 +7,14 @@ function ToolkitList({}: Props) {
   return (
     <>
       <div className="language-container">
-        <LanguageIcon size={48} lang="javascript"></LanguageIcon>
-        <LanguageIcon size={48} lang="css3"></LanguageIcon>
-        <LanguageIcon size={48} lang="html5"></LanguageIcon>
-        <LanguageIcon size={48} lang="wordpress"></LanguageIcon>
-        <LanguageIcon size={48} lang="react"></LanguageIcon>
-        <LanguageIcon size={48} lang="sass"></LanguageIcon>
-        <LanguageIcon size={48} lang="figma"></LanguageIcon>
-        <LanguageIcon size={48} lang="cplusplus"></LanguageIcon>
+        <LanguageIcon size={48} lang="javascript-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="css3-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="html5-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="wordpress-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="react-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="sass-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="figma-plain"></LanguageIcon>
+        <LanguageIcon size={48} lang="cplusplus-plain"></LanguageIcon>
       </div>
     </>
   );
