@@ -21,7 +21,7 @@ function ProjectEntry({ title, desc, img, languages, siteURL, gitURL }: Props) {
 
   return (
     <>
-      <div className="project-entry-container">
+      <div className="entry-container">
         <article className="project-entry">
           <div
             className="project-image"
