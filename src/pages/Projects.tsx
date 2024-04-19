@@ -16,7 +16,7 @@ const Projects = () => {
         />
         <SectionTitle
           title="Projects"
-          desc="Here's a collection of projects so far, this will grow in the future !"
+          desc="Here's a collection of both commercial and university projects I have completed."
           background={false}
         />
         <ProjectContainer />

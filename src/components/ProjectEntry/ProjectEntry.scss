@@ -13,8 +13,8 @@
 }
 
 .project-image {
-  width: calc(75% + 10%);
-  min-height: 250px;
+  width: calc(60% + 10%);
+  min-height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,22 +32,26 @@
   flex-direction: column;
   background-color: $primary-colour;
   color: $secondary-colour;
-  padding: 25px 5%;
-  width: 75%;
+  padding: 10px 5% 20px 5%;
+  width: 60%;
+  min-height: 250px;
 
   // border: 1px solid $primary-colour;
   border-top-style: solid;
   border-top-width: 10px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
   h2 {
-    margin: 0;
+    margin: 10px 0px 20px 0px;
+    font-size: 24px;
   }
   p {
     width: 100%;
     max-width: 60ch;
-    text-wrap: wrap;
-    font-size: clamp(0.7rem, 1vw + 1rem, 1.2rem);
+    margin: 2px 0px;
+    // font-size: clamp(16px, 18px, 20px);
+    font-size: 16px;
     margin-bottom: 0;
     flex-basis: 7em;
   }
@@ -59,12 +63,15 @@
   align-items: center;
   margin: 0px 0px 20px 0px;
   width: 100%;
-  gap: 3em;
+  gap: 2em;
+  i {
+    font-size: 36px;
+  }
   @include breakpoint(0px, 1024px) {
     gap: 2em;
-    i {
-      font-size: 36px;
-    }
+    // i {
+    //   font-size: 36px;
+    // }
   }
 }
 
@@ -73,11 +80,32 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  gap: 5em;
+  gap: 2em;
+  button {
+    padding: 7px 12px;
+  }
   @include breakpoint(0px, 400px) {
     gap: 1em;
     button {
       padding: 10px 10px;
     }
   }
+}
+
+.project-image:before {
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 37px;
+  border-left-width: 53px;
+  border-right-width: 26px;
+  content: "";
+  display: block;
+  left: -49px;
+  position: absolute;
+  width: 141%;
+  border-top-width: 0px;
+  border-bottom-color: #9c1b21;
+  top: -2px;
+  z-index: -1;
 }
