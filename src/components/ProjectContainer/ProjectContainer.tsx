@@ -12,7 +12,7 @@ function ProjectContainer({}: Props) {
         <ProjectEntry
           title="BSU Computing"
           desc="Web development internship at Bath Spa University, designing and building a website for the computing department to showcase student work."
-          img="src/assets/bread.jpg"
+          img="src/assets/bsu-thumbnail.jpg"
           languages={[
             "wordpress-plain",
             "php-plain",
@@ -20,19 +20,18 @@ function ProjectContainer({}: Props) {
             "figma-plain",
           ]}
           siteURL="https://www.bsucomputing.co.uk/"
-          gitURL="https://www.bsucomputing.co.uk/"
         />
         <ProjectEntry
           title="Podcasting Toolkit"
           desc="Created a website for a client to showcase their research in using podcasts as a learning resource within higher education."
-          img="src/assets/bread.jpg"
+          img="src/assets/podcast-thumbnail.jpg"
           languages={["wordpress-plain", "javascript-plain"]}
           siteURL="https://podcastingtoolkit.co.uk/"
         />
         <ProjectEntry
           title="Mate Rate"
           desc="Mate Rate is a satirical take on standard social media, with a focus on seeking other people’s approval via the content they post."
-          img="src/assets/bread.jpg"
+          img="src/assets/materate-thumbnail.jpg"
           languages={["html5-plain", "sass-plain", "javascript-plain"]}
           gitURL="https://github.com/JStone1/Mate-Rate"
           siteURL="https://mate-rate.glitch.me/"
@@ -40,7 +39,7 @@ function ProjectContainer({}: Props) {
         <ProjectEntry
           title="Deep Dive"
           desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles."
-          img="src/assets/bread.jpg"
+          img="src/assets/deepdive-thumbnail.jpg"
           languages={[
             "html5-plain",
             "sass-plain",
@@ -63,13 +62,13 @@ function ProjectContainer({}: Props) {
           gitURL="https://github.com/JStone1/Sign-Learn"
           siteURL="https://jstone1.github.io/Sign-Learn/"
         />
-        <ProjectEntry
+        {/* <ProjectEntry
           title="Killing Blow"
           desc="Killing Blow is a simple but addictive game where the aim is to destroy the smug-looking (and probably evil) aliens in deep space!"
           img="src/assets/bread.jpg"
           languages={["", "", "", ""]}
           siteURL="https://jstone1.itch.io/killing-blow"
-        />
+        /> */}
       </div>
     </>
   );

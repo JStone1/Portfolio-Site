@@ -15,12 +15,13 @@
 .project-image {
   width: calc(75% + 10%);
   min-height: 250px;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 20px 20px 0px 0px;
-
+  // border: 1px solid $primary-colour;
+  box-shadow: 1px -5px 8px #a3a3a3;
+  border-bottom: none;
   @include breakpoint(0px, 600px) {
     height: 150px;
   }
@@ -33,6 +34,8 @@
   color: $secondary-colour;
   padding: 25px 5%;
   width: 75%;
+
+  // border: 1px solid $primary-colour;
   border-top-style: solid;
   border-top-width: 10px;
   border-bottom-left-radius: 20px;
@@ -54,7 +57,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 25px 0px;
+  margin: 0px 0px 20px 0px;
   width: 100%;
   gap: 3em;
   @include breakpoint(0px, 1024px) {
