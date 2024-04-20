@@ -22,6 +22,7 @@
   // border: 1px solid $primary-colour;
   box-shadow: 1px -5px 8px #a3a3a3;
   border-bottom: none;
+  transition: none !important;
   @include breakpoint(0px, 600px) {
     height: 150px;
   }
@@ -90,22 +91,4 @@
       padding: 10px 10px;
     }
   }
-}
-
-.project-image:before {
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: transparent;
-  border-width: 37px;
-  border-left-width: 53px;
-  border-right-width: 26px;
-  content: "";
-  display: block;
-  left: -49px;
-  position: absolute;
-  width: 141%;
-  border-top-width: 0px;
-  border-bottom-color: #9c1b21;
-  top: -2px;
-  z-index: -1;
 }
