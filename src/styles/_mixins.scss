@@ -33,6 +33,8 @@
     cursor: pointer;
     &:hover {
       text-decoration: underline;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 0.5em;
     }
   }
   a {
@@ -97,5 +99,22 @@
   }
   .project-card {
     border-top-color: $accent;
+  }
+
+  .category-button {
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      background-color: $accent;
+      color: $primary-colour;
+    }
+  }
+  .category-active {
+    background-color: $accent;
+    border: transparent;
+    &:hover {
+      background-color: $accent;
+      color: $primary-colour;
+    }
   }
 }

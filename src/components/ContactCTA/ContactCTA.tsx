@@ -9,6 +9,10 @@ interface Props {
 }
 
 function ContactCTA({ title, prompt, link, desc }: Props) {
+  const scrollToTop = () => {
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   if (desc) {
     return (
       <div className="cta-container col-layout">
@@ -43,7 +47,12 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
     <>
       <div className="cta-container">
         <h3>{title}</h3>
-        <NavLink to={"/" + link}>
+        <NavLink
+          to={"/" + link}
+          onClick={() => {
+            scrollToTop();
+          }}
+        >
           <button>{prompt}</button>
         </NavLink>
       </div>

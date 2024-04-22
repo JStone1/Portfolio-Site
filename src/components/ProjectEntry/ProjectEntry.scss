@@ -74,6 +74,10 @@
     //   font-size: 36px;
     // }
   }
+  @include breakpoint(0px, 425px) {
+    margin: 20px 0px 20px 0px;
+    gap: 8px;
+  }
 }
 
 .project-buttons {

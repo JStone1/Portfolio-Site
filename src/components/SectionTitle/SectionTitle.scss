@@ -4,7 +4,7 @@
   @include centerContent(column, center);
   text-align: center;
   width: 100%;
-  margin: 300px auto 0px auto;
+  margin: 250px auto 0px auto;
   p {
     width: 40%;
   }
@@ -12,6 +12,8 @@
     font-weight: 700;
   }
   @include breakpoint(0px, 1024px) {
+    margin: 300px auto 0px auto;
+
     p {
       width: 75%;
     }

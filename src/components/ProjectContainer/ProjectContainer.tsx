@@ -147,9 +147,36 @@ function ProjectContainer({}: Props) {
   return (
     <>
       <div className="filter-button-container">
-        <button onClick={() => setCategory("All")}>All</button>
-        <button onClick={() => setCategory("Commercial")}>Commercial</button>
-        <button onClick={() => setCategory("University")}>University</button>
+        <button
+          className={
+            category === "All" ? "category-active" : "" + "category-button"
+          }
+          onClick={() => setCategory("All")}
+        >
+          All
+        </button>
+        <button
+          className={
+            category === "Commercial"
+              ? "category-active"
+              : "" + "category-button"
+          }
+          onClick={() => {
+            setCategory("Commercial");
+          }}
+        >
+          Commercial
+        </button>
+        <button
+          className={
+            category === "University"
+              ? "category-active"
+              : "" + "category-button"
+          }
+          onClick={() => setCategory("University")}
+        >
+          University
+        </button>
       </div>
       {displayProjects()}
     </>
