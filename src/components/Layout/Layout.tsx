@@ -5,14 +5,15 @@ import Header from "@components/Header/Header";
 
 interface Props {
   children: ReactNode;
+  footerMargin: number;
 }
 
-function PageContainer({ children }: Props) {
+function PageContainer({ children, footerMargin }: Props) {
   return (
     <>
       <Header />
       <div id="page-container">{children}</div>
-      <Footer />
+      <Footer topMargin={footerMargin} />
     </>
   );
 }

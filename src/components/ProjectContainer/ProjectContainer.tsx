@@ -16,6 +16,19 @@ function ProjectContainer({}: Props) {
           <>
             <div className="project-container">
               <ProjectEntry
+                title="My Portfolio"
+                desc="Personal portfolio site that you are currently on! First large project using React and TypeScript."
+                img="src/assets/portfolio-thumbnail.png"
+                languages={[
+                  "react-plain",
+                  "typescript-plain",
+                  "sass-plain",
+                  "figma-plain",
+                ]}
+                siteURL="http://localhost:5173/"
+                gitURL="https://github.com/JStone1/Portfolio-Site"
+              />
+              <ProjectEntry
                 title="BSU Computing"
                 desc="Web development internship at Bath Spa University, designing and building a website for the computing department to showcase student work."
                 img="src/assets/bsu-thumbnail.jpg"
@@ -72,7 +85,7 @@ function ProjectContainer({}: Props) {
           </>
         );
         break;
-      case "Commercial":
+      case "Professional":
         return (
           <>
             <div className="project-container">
@@ -99,10 +112,23 @@ function ProjectContainer({}: Props) {
           </>
         );
         break;
-      case "University":
+      case "Personal":
         return (
           <>
             <div className="project-container">
+              <ProjectEntry
+                title="My Portfolio"
+                desc="Personal portfolio site that you are currently on! First large project using React and TypeScript."
+                img="src/assets/portfolio-thumbnail.png"
+                languages={[
+                  "react-plain",
+                  "typescript-plain",
+                  "sass-plain",
+                  "figma-plain",
+                ]}
+                siteURL="http://localhost:5173/"
+                gitURL="https://github.com/JStone1/Portfolio-Site"
+              />
               <ProjectEntry
                 title="Mate Rate"
                 desc="Mate Rate is a satirical take on standard social media, with a focus on seeking other people’s approval via the content they post."
@@ -157,25 +183,23 @@ function ProjectContainer({}: Props) {
         </button>
         <button
           className={
-            category === "Commercial"
+            category === "Professional"
               ? "category-active"
               : "" + "category-button"
           }
           onClick={() => {
-            setCategory("Commercial");
+            setCategory("Professional");
           }}
         >
-          Commercial
+          Professional
         </button>
         <button
           className={
-            category === "University"
-              ? "category-active"
-              : "" + "category-button"
+            category === "Personal" ? "category-active" : "" + "category-button"
           }
-          onClick={() => setCategory("University")}
+          onClick={() => setCategory("Personal")}
         >
-          University
+          Personal
         </button>
       </div>
       {displayProjects()}

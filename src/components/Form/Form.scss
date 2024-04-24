@@ -1,0 +1,51 @@
+@import "src/styles/index.scss";
+
+.form-container {
+  @include centerContent(column, center);
+  align-items: center;
+  height: calc(100vh - 185px);
+  width: 500px;
+  margin: 0px auto;
+  @include breakpoint(0px, 850px) {
+    width: 300px;
+  }
+  @include breakpoint(0px, 600px) {
+    width: 250px;
+  }
+}
+
+.contact-form {
+  @include centerContent(column, center);
+  align-items: center;
+  font-family: "Inter";
+  gap: 2em;
+  border-radius: 20px;
+  padding: 40px 0px;
+}
+
+.contact-form-text {
+  text-align: center;
+}
+
+label {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.text-input {
+  font-family: "Oxygen", sans-serif;
+  border-radius: 5px;
+  padding: 10px 10px;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $primary-colour;
+  width: 500px;
+  resize: none;
+  @include breakpoint(0px, 850px) {
+    width: 300px;
+  }
+  @include breakpoint(0px, 600px) {
+    width: 250px;
+  }
+}

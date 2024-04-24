@@ -7,7 +7,7 @@ import ToolkitList from "@components/ToolkitList/ToolkitList";
 const Home = () => {
   return (
     <>
-      <Layout>
+      <Layout footerMargin={250}>
         <Hero
           title="Web Developer and Creative Technologist"
           keyword="John Stone"

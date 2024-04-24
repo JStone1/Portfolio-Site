@@ -1,6 +1,5 @@
 import "./Header.scss";
 import Nav from "@components/Nav/Nav";
-import ThemeSwitcher from "@components/ThemeSwitcher/ThemeSwitcher";
 
 function Header() {
   return (

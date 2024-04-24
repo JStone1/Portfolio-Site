@@ -1,9 +1,13 @@
 import "./Footer.scss";
 
-function Footer() {
+interface Props {
+  topMargin: number;
+}
+
+function Footer({ topMargin }: Props) {
   return (
     <>
-      <footer>
+      <footer style={{ marginTop: topMargin + "px" }}>
         <h3>John Stone</h3>
         <div className="social-container">
           <a

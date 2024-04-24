@@ -6,7 +6,7 @@ import SectionTitle from "@components/SectionTitle/SectionTitle";
 const Projects = () => {
   return (
     <>
-      <Layout>
+      <Layout footerMargin={250}>
         <Hero
           title="What I’ve done so far"
           keyword="Projects"

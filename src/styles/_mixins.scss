@@ -11,6 +11,7 @@
   li {
     margin: 0px $sideMargin;
     cursor: pointer;
+    color: $secondary-colour;
     &:hover {
       text-decoration: underline;
       text-decoration-thickness: 3px;
@@ -56,6 +57,7 @@
   * {
     transition: 0.5s;
   }
+
   nav a.active {
     text-decoration-color: $accent;
     &:hover {
@@ -116,5 +118,8 @@
       background-color: $accent;
       color: $primary-colour;
     }
+  }
+  .text-input:focus {
+    border-color: $accent;
   }
 }
