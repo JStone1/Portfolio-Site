@@ -18,7 +18,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="My Portfolio"
                 desc="Personal portfolio site that you are currently on! First large project using React and TypeScript."
-                img="src/assets/portfolio-thumbnail.png"
+                img="public/assets/portfolio-thumbnail.png"
                 languages={[
                   "react-plain",
                   "typescript-plain",
@@ -31,7 +31,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="BSU Computing"
                 desc="Web development internship at Bath Spa University, designing and building a website for the computing department to showcase student work."
-                img="src/assets/bsu-thumbnail.jpg"
+                img="public/assets/bsu-thumbnail.jpg"
                 languages={[
                   "wordpress-plain",
                   "php-plain",
@@ -43,14 +43,14 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Podcasting Toolkit"
                 desc="Created a website for a client to showcase their research in using podcasts as a learning resource within higher education."
-                img="src/assets/podcast-thumbnail.jpg"
+                img="public/assets/podcast-thumbnail.jpg"
                 languages={["wordpress-plain", "javascript-plain"]}
                 siteURL="https://podcastingtoolkit.co.uk/"
               />
               <ProjectEntry
                 title="Mate Rate"
                 desc="Mate Rate is a satirical take on standard social media, with a focus on seeking other people’s approval via the content they post."
-                img="src/assets/materate-thumbnail.jpg"
+                img="public/assets/materate-thumbnail.jpg"
                 languages={["html5-plain", "sass-plain", "javascript-plain"]}
                 gitURL="https://github.com/JStone1/Mate-Rate"
                 siteURL="https://mate-rate.glitch.me/"
@@ -58,7 +58,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Deep Dive"
                 desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles."
-                img="src/assets/deepdive-thumbnail.jpg"
+                img="public/assets/deepdive-thumbnail.jpg"
                 languages={[
                   "html5-plain",
                   "sass-plain",
@@ -71,7 +71,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Sign Learn"
                 desc="Sign Learn is an interactive learning tool prototype that aims to help people learn the alphabet in ISL (Irish Sign Language)."
-                img="src/assets/bread.jpg"
+                img="public/assets/bread.jpg"
                 languages={[
                   "html5-plain",
                   "css3-plain",
@@ -92,7 +92,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="BSU Computing"
                 desc="Web development internship at Bath Spa University, designing and building a website for the computing department to showcase student work."
-                img="src/assets/bsu-thumbnail.jpg"
+                img="public/assets/bsu-thumbnail.jpg"
                 languages={[
                   "wordpress-plain",
                   "php-plain",
@@ -104,7 +104,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Podcasting Toolkit"
                 desc="Created a website for a client to showcase their research in using podcasts as a learning resource within higher education."
-                img="src/assets/podcast-thumbnail.jpg"
+                img="public/assets/podcast-thumbnail.jpg"
                 languages={["wordpress-plain", "javascript-plain"]}
                 siteURL="https://podcastingtoolkit.co.uk/"
               />
@@ -119,7 +119,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="My Portfolio"
                 desc="Personal portfolio site that you are currently on! First large project using React and TypeScript."
-                img="src/assets/portfolio-thumbnail.png"
+                img="public/assets/portfolio-thumbnail.png"
                 languages={[
                   "react-plain",
                   "typescript-plain",
@@ -132,7 +132,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Mate Rate"
                 desc="Mate Rate is a satirical take on standard social media, with a focus on seeking other people’s approval via the content they post."
-                img="src/assets/materate-thumbnail.jpg"
+                img="public/assets/materate-thumbnail.jpg"
                 languages={["html5-plain", "sass-plain", "javascript-plain"]}
                 gitURL="https://github.com/JStone1/Mate-Rate"
                 siteURL="https://mate-rate.glitch.me/"
@@ -140,7 +140,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Deep Dive"
                 desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles."
-                img="src/assets/deepdive-thumbnail.jpg"
+                img="public/assets/deepdive-thumbnail.jpg"
                 languages={[
                   "html5-plain",
                   "sass-plain",
@@ -153,7 +153,7 @@ function ProjectContainer({}: Props) {
               <ProjectEntry
                 title="Sign Learn"
                 desc="Sign Learn is an interactive learning tool prototype that aims to help people learn the alphabet in ISL (Irish Sign Language)."
-                img="src/assets/bread.jpg"
+                img="public/assets/bread.jpg"
                 languages={[
                   "html5-plain",
                   "css3-plain",
