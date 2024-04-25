@@ -23,6 +23,11 @@
   padding: 40px 0px;
 }
 
+.form-field {
+  @include centerContent(column, center);
+  align-items: flex-start;
+}
+
 .contact-form-text {
   text-align: center;
 }
