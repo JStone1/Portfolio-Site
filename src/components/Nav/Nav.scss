@@ -31,7 +31,7 @@ nav a.active {
   left: 0;
   right: 0;
   transition: 1s;
-  z-index: 2;
+  // z-index: 2;
   text-decoration: none;
   a {
     text-decoration: none;
@@ -53,6 +53,10 @@ nav a.active {
   @include breakpoint(600px, 2800px) {
     display: none;
   }
+}
+
+.fixed-body {
+  position: fixed;
 }
 
 .hidden {

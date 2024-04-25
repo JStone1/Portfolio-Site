@@ -4,14 +4,24 @@ import { Divide as Hamburger } from "hamburger-react";
 import { useState } from "react";
 
 function Nav() {
-  const [hamburgerOpen, setHamburgOpen] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
 
-  function toggleHamburger() {
-    let mobileNav = document.querySelector(".mobile-nav-item-container");
+  let body = document.querySelector("body");
+
+  function handleMobileNav() {
+    let mobileNavMenu = document.querySelector(".mobile-nav-item-container");
     let hamburger = document.querySelector(".hamburger-container");
 
-    mobileNav?.classList.toggle("hidden");
-    hamburger?.classList.toggle("fixed");
+    if (!mobileNav) {
+      mobileNavMenu?.classList.remove("hidden");
+      hamburger?.classList.add("fixed");
+      body?.classList.add("fixed-body");
+    } else {
+      mobileNavMenu?.classList.add("hidden");
+      hamburger?.classList.remove("fixed");
+      body?.classList.remove("fixed-body");
+      setMobileNav(false);
+    }
   }
 
   const scrollToTop = () => {
@@ -41,31 +51,61 @@ function Nav() {
               </a>
             </div>
           </div>
-          <NavLink onClick={() => scrollToTop()} to="/">
+          <NavLink
+            onClick={() => {
+              scrollToTop(), handleMobileNav();
+            }}
+            to="/"
+          >
             <li>About</li>
           </NavLink>
-          <NavLink onClick={() => scrollToTop()} to="/projects">
+          <NavLink
+            onClick={() => {
+              scrollToTop(), handleMobileNav();
+            }}
+            to="/projects"
+          >
             <li>Projects</li>
           </NavLink>
-          <NavLink onClick={() => scrollToTop()} to="/contact">
+          <NavLink
+            onClick={() => {
+              scrollToTop(), handleMobileNav();
+            }}
+            to="/contact"
+          >
             <li>Contact</li>
           </NavLink>
         </div>
         <div className="nav-item-container">
-          <NavLink onClick={() => scrollToTop()} to="/">
+          <NavLink
+            onClick={() => {
+              scrollToTop(), handleMobileNav();
+            }}
+            to="/"
+          >
             <li>About</li>
           </NavLink>
-          <NavLink onClick={() => scrollToTop()} to="/projects">
+          <NavLink
+            onClick={() => {
+              scrollToTop(), handleMobileNav();
+            }}
+            to="/projects"
+          >
             <li>Projects</li>
           </NavLink>
-          <NavLink onClick={() => scrollToTop()} to="/contact">
+          <NavLink
+            onClick={() => {
+              scrollToTop(), handleMobileNav();
+            }}
+            to="/contact"
+          >
             <li>Contact</li>
           </NavLink>
         </div>
-        <div onClick={toggleHamburger} className={"hamburger-container"}>
+        <div onClick={handleMobileNav} className={"hamburger-container"}>
           <Hamburger
-            toggled={hamburgerOpen}
-            toggle={setHamburgOpen}
+            toggled={mobileNav}
+            toggle={setMobileNav}
             size={24}
             duration={0.8}
             label="Show menu"
