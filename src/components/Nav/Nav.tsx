@@ -77,28 +77,13 @@ function Nav() {
           </NavLink>
         </div>
         <div className="nav-item-container">
-          <NavLink
-            onClick={() => {
-              scrollToTop(), handleMobileNav();
-            }}
-            to="/"
-          >
+          <NavLink onClick={() => scrollToTop()} to="/">
             <li>About</li>
           </NavLink>
-          <NavLink
-            onClick={() => {
-              scrollToTop(), handleMobileNav();
-            }}
-            to="/projects"
-          >
+          <NavLink onClick={() => scrollToTop()} to="/projects">
             <li>Projects</li>
           </NavLink>
-          <NavLink
-            onClick={() => {
-              scrollToTop(), handleMobileNav();
-            }}
-            to="/contact"
-          >
+          <NavLink onClick={() => scrollToTop()} to="/contact">
             <li>Contact</li>
           </NavLink>
         </div>
