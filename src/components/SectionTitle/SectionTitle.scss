@@ -13,10 +13,12 @@
   }
   @include breakpoint(0px, 1024px) {
     margin: 300px auto 0px auto;
-
     p {
       width: 75%;
     }
+  }
+  @include breakpoint(0px, 425px) {
+    margin: 150px auto 0px auto;
   }
 }
 

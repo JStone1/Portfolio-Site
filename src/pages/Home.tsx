@@ -9,9 +9,8 @@ const Home = () => {
     <>
       <Layout footerMargin={250}>
         <Hero
-          title="Web Developer and Creative Technologist"
-          keyword="John Stone"
-          desc="Creative Computing Graduate"
+          title="John Stone"
+          desc="Web Developer and Creative Technologist "
           imageURL="/assets/profile-img.jpg"
         />
         <SectionTitle

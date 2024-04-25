@@ -8,8 +8,7 @@ const Projects = () => {
     <>
       <Layout footerMargin={250}>
         <Hero
-          title="What I’ve done so far"
-          keyword="Projects"
+          title="Projects"
           desc="A collection of commercial and university projects"
           imageURL="/assets/mountain.jpg"
           isReverse={true}
