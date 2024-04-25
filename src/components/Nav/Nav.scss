@@ -36,6 +36,10 @@ nav a.active {
   a {
     text-decoration: none;
   }
+  li,
+  &:visited {
+    color: $secondary-colour;
+  }
 }
 
 .mobile-nav-details {
