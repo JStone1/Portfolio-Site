@@ -11,7 +11,7 @@ const Projects = () => {
           title="What I’ve done so far"
           keyword="Projects"
           desc="A collection of commercial and university projects"
-          imageURL="public/assets/mountain.jpg"
+          imageURL="/assets/mountain.jpg"
           isReverse={true}
         />
         <SectionTitle

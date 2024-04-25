@@ -12,7 +12,7 @@ const Home = () => {
           title="Web Developer and Creative Technologist"
           keyword="John Stone"
           desc="Creative Computing Graduate"
-          imageURL="public/assets/profile-img.jpg"
+          imageURL="/assets/profile-img.jpg"
         />
         <SectionTitle
           title="About me"
