@@ -2,6 +2,9 @@
 
 .timeline-container {
   margin: 50px 0px;
+  @include breakpoint(0px, 600px) {
+    margin: 0px 0px;
+  }
 }
 
 .timeline-item-container {

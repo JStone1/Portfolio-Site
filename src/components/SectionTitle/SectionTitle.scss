@@ -17,6 +17,7 @@
       width: 75%;
     }
   }
+
   @include breakpoint(0px, 425px) {
     margin: 200px auto 0px auto;
   }
@@ -27,6 +28,6 @@
   color: $secondary-colour;
   margin: 250px auto 250px auto;
   @include breakpoint(0px, 600px) {
-    margin-bottom: 100px;
+    margin: 150px auto 100px auto;
   }
 }
