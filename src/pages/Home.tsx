@@ -7,10 +7,9 @@ import ToolkitList from "@components/ToolkitList/ToolkitList";
 const Home = () => {
   return (
     <>
-      <h1>Test Header</h1>
       <Layout footerMargin={250}>
         <Hero
-          title="John Stone Test"
+          title="John Stone"
           desc="Web Developer and Creative Technologist "
           imageURL="/assets/profile-img.jpg"
         />

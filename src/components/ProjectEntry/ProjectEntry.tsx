@@ -1,12 +1,14 @@
 import "./ProjectEntry.scss";
 import LanguageIcon from "@components/LanguageIcon/LanguageIcon";
 import ExternalBtn from "@components/ExternalBtn/ExternalBtn";
+import { motion } from "framer-motion";
 
 interface Props {
   title: string;
   desc: string;
   img: string;
   languages: string[];
+  projectType: "professional" | "personal";
   siteURL?: string;
   gitURL?: string;
 }
@@ -19,9 +21,14 @@ function ProjectEntry({ title, desc, img, languages, siteURL, gitURL }: Props) {
     lang4: languages[3],
   };
 
+  const projectEntryVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
     <>
-      <div className="entry-container">
+      <motion.div variants={projectEntryVariants} className="entry-container">
         <article className="project-entry">
           <div
             className="project-image"
@@ -42,7 +49,7 @@ function ProjectEntry({ title, desc, img, languages, siteURL, gitURL }: Props) {
             </div>
           </div>
         </article>
-      </div>
+      </motion.div>
     </>
   );
 }

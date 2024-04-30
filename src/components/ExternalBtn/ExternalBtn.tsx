@@ -1,4 +1,5 @@
 import "./ExternalBtn.scss";
+import { motion } from "framer-motion";
 
 interface Props {
   url?: string;
@@ -13,7 +14,13 @@ function ExternalBtn({ url, text }: Props) {
   return (
     <>
       <a href={url} target="blank">
-        <button>{text}</button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ bounceDamping: 10, bounceStiffness: 800 }}
+        >
+          {text}
+        </motion.button>
       </a>
     </>
   );
