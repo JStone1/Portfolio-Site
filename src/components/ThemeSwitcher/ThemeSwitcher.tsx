@@ -1,5 +1,6 @@
 import "./ThemeSwitcher.scss";
 import { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 
 interface Props {}
 
@@ -40,9 +41,27 @@ function ThemeSwitcher({}: Props) {
     getTheme();
   }, []);
 
+  const themeSwitcherVariants = {
+    hidden: { opacity: 0, x: 20 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: 0.2,
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <>
-      <form className="theme-picker" action="">
+      <motion.form
+        variants={themeSwitcherVariants}
+        initial="hidden"
+        animate="visible"
+        className="theme-picker"
+        action=""
+      >
         <fieldset>
           <legend className="visually-hidden">Pick theme</legend>
           <label className="visually-hidden" htmlFor="orange">
@@ -77,7 +96,7 @@ function ThemeSwitcher({}: Props) {
             onClick={handlePinkColourClick}
           />
         </fieldset>
-      </form>
+      </motion.form>
     </>
   );
 }

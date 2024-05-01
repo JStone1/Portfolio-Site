@@ -54,10 +54,6 @@
 /* Dicates all colour styling after switching e.g. buttons and cards */
 
 @mixin theme($accent) {
-  * {
-    transition: 0.3s;
-  }
-
   nav a.active {
     text-decoration-color: $accent;
     &:hover {
@@ -66,6 +62,7 @@
   }
   .card {
     background-color: $accent;
+    transition: background-color 0.3s;
   }
   button {
     background-color: $accent;
@@ -78,6 +75,9 @@
     &:hover {
       background-color: $accent;
     }
+  }
+  .active-dot {
+    background-color: $accent;
   }
   .outlined {
     &:hover {

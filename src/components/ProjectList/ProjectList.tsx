@@ -83,7 +83,7 @@ function ProjectList({ projectType }: Props) {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.2,
+        delay: 0.5,
         staggerChildren: 0.5,
       },
     },

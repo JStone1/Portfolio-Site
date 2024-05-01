@@ -6,11 +6,32 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { forwardRef, useEffect, useState } from "react";
 
 interface Props {}
 
 function ExpTimeline({}: Props) {
+  useEffect(() => {
+    const handleScroll = () => {
+      document.querySelectorAll(".dot").forEach((dot) => {
+        const rect = dot.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 250 && rect.bottom >= 0) {
+          console.log("Active dot ID:", dot.id);
+          dot.classList.add("active-dot");
+        } else {
+          dot.classList.remove("active-dot");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Timeline className="timeline-container">
@@ -19,22 +40,21 @@ function ExpTimeline({}: Props) {
             2020 - 2023
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot className="dot" />
+            <TimelineDot id="dot1" className="dot" />
             <TimelineConnector className="line" />
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
             <h2 className="timeline-title">Bath Spa University</h2>
             <p className="timeline-desc">
               Studying my degree in Creative Computing allowed me to work on a
-              wide variety of exciting projects, from{" "}
+              wide variety of exciting projects, from
               <span className="highlight-text">
                 developing and deploying web apps
-              </span>{" "}
+              </span>
               to creating fun and compelling mobile games. Throughout my degree,
-              an emphasis was put on{" "}
+              an emphasis was put on
               <span className="highlight-text">
-                {" "}
-                user-focused, iterative design,{" "}
+                user-focused, iterative design,
               </span>
               something that I have tried to carry through to all of my
               projects.
@@ -46,7 +66,8 @@ function ExpTimeline({}: Props) {
             July 2022
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot className="dot" color="primary" />
+            <TimelineDot id="dot2" className="dot" />
+
             <TimelineConnector className="line" />
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
@@ -54,8 +75,8 @@ function ExpTimeline({}: Props) {
             <p className="timeline-desc">
               I was fortunate enough to be selected by my university for the
               Turing Scheme placement in Australia working with the University
-              of Adelaide to complete a module in{" "}
-              <span className="highlight-text">VR Design and Development.</span>{" "}
+              of Adelaide to complete a module in
+              <span className="highlight-text">VR Design and Development.</span>
               I was exposed to cutting edge technology and even created a VR
               game of my own!
             </p>
@@ -66,7 +87,7 @@ function ExpTimeline({}: Props) {
             Aug-Nov 2023
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot className="dot" color="secondary" />
+            <TimelineDot id="dot3" className="dot" />
             <TimelineConnector className="line" />
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
@@ -74,16 +95,16 @@ function ExpTimeline({}: Props) {
             <p className="timeline-desc">
               After graduation, I got stuck straight into developing two
               websites, one as part of an internship and the other as a
-              freelancer. I undertook{" "}
+              freelancer. I undertook
               <span className="highlight-text">requirement gathering</span> and
-              held{" "}
+              held
               <span className="highlight-text">
                 regular meetings with the clients
-              </span>{" "}
+              </span>
               to showcase progress.
               <br />
               <br /> Both sites needed easy content management after handover,
-              so the decision was to build them on{" "}
+              so the decision was to build them on
               <span className="highlight-text">WordPress.</span> Site
               functionality was expanded by utilising appropriate plugins,
               registering custom post types and devising custom JavaScript
@@ -98,7 +119,7 @@ function ExpTimeline({}: Props) {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <NavLink style={{ textDecoration: "none" }} to="/contact">
-              <TimelineDot className="dot outlined"></TimelineDot>
+              <TimelineDot id="dot4" className="dot"></TimelineDot>
             </NavLink>
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
