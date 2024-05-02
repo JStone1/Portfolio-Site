@@ -83,7 +83,7 @@ function ProjectList({ projectType }: Props) {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.5,
+        // delay: 0.5,
         staggerChildren: 0.5,
       },
     },
@@ -95,7 +95,7 @@ function ProjectList({ projectType }: Props) {
         <motion.section
           variants={projectContainerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           viewport={{ once: true }}
           className="project-container"
         >
@@ -110,7 +110,7 @@ function ProjectList({ projectType }: Props) {
         <motion.section
           variants={projectContainerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           viewport={{ once: true }}
           className="project-container"
         >
@@ -127,7 +127,7 @@ function ProjectList({ projectType }: Props) {
         <motion.section
           variants={projectContainerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
           viewport={{ once: true }}
           className="project-container"
         >
