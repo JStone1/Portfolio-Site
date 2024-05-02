@@ -1,4 +1,5 @@
 import "./LanguageIcon.scss";
+import { motion } from "framer-motion";
 
 interface Props {
   lang: string;
@@ -6,14 +7,18 @@ interface Props {
 }
 
 function LanguageIcon({ lang, size }: Props) {
+  const languageIconVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
   return (
     <>
-      <span>
+      <motion.span variants={languageIconVariants}>
         <i
           style={{ fontSize: size }}
           className={`devicon-${lang} language-icon`}
         ></i>
-      </span>
+      </motion.span>
     </>
   );
 }

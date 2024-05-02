@@ -6,9 +6,8 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { forwardRef, useEffect, useState } from "react";
+import { useEffect } from "react";
 
 interface Props {}
 
@@ -20,8 +19,6 @@ function ExpTimeline({}: Props) {
         if (rect.top < window.innerHeight - 250 && rect.bottom >= 0) {
           console.log("Active dot ID:", dot.id);
           dot.classList.add("active-dot");
-        } else {
-          dot.classList.remove("active-dot");
         }
       });
     };

@@ -1,5 +1,6 @@
 import "./ContactCTA.scss";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 interface Props {
   title: string;
@@ -9,13 +10,31 @@ interface Props {
 }
 
 function ContactCTA({ title, prompt, link, desc }: Props) {
+  const ctaVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.2,
+        duration: 1,
+      },
+    },
+  };
+
   const scrollToTop = () => {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
   };
 
   if (desc) {
     return (
-      <div className="cta-container col-layout">
+      <motion.div
+        variants={ctaVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="cta-container col-layout"
+      >
         <h3>{title}</h3>
         <div className="info-container">
           <div className="cta-image-container">
@@ -39,13 +58,19 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
         <NavLink className={"cta-button-container"} to={"/" + link}>
           <button>{prompt}</button>
         </NavLink>
-      </div>
+      </motion.div>
     );
   }
 
   return (
     <>
-      <div className="cta-container">
+      <motion.div
+        variants={ctaVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="cta-container"
+      >
         <h3>{title}</h3>
         <NavLink
           to={"/" + link}
@@ -55,7 +80,7 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
         >
           <button>{prompt}</button>
         </NavLink>
-      </div>
+      </motion.div>
     </>
   );
 }
