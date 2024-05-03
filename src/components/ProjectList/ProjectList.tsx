@@ -83,8 +83,7 @@ function ProjectList({ projectType }: Props) {
     visible: {
       opacity: 1,
       transition: {
-        // delay: 0.5,
-        staggerChildren: 0.5,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -96,11 +95,11 @@ function ProjectList({ projectType }: Props) {
           variants={projectContainerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
           {projects.map((project) => {
-            return <div>{project}</div>;
+            return <>{project}</>;
           })}
         </motion.section>
       );
@@ -111,12 +110,12 @@ function ProjectList({ projectType }: Props) {
           variants={projectContainerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
           {projects.map((project) => {
             if (project.props.projectType === "professional") {
-              return <div>{project}</div>;
+              return <>{project}</>;
             }
           })}
         </motion.section>
@@ -128,12 +127,12 @@ function ProjectList({ projectType }: Props) {
           variants={projectContainerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
           {projects.map((project) => {
             if (project.props.projectType === "personal") {
-              return <div>{project}</div>;
+              return <>{project}</>;
             }
           })}
         </motion.section>

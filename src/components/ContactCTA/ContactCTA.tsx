@@ -56,7 +56,13 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
           <p className="cta-desc">{desc}</p>
         </div>
         <NavLink className={"cta-button-container"} to={"/" + link}>
-          <button>{prompt}</button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ bounceDamping: 10, bounceStiffness: 800 }}
+          >
+            {prompt}
+          </motion.button>
         </NavLink>
       </motion.div>
     );
@@ -78,7 +84,13 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
             scrollToTop();
           }}
         >
-          <button>{prompt}</button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ bounceDamping: 10, bounceStiffness: 800 }}
+          >
+            {prompt}
+          </motion.button>
         </NavLink>
       </motion.div>
     </>
