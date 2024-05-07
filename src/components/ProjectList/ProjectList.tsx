@@ -1,5 +1,6 @@
 import "./ProjectList.scss";
 import ProjectEntry from "@components/ProjectEntry/ProjectEntry";
+import { duration } from "@mui/material";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -84,6 +85,8 @@ function ProjectList({ projectType }: Props) {
       opacity: 1,
       transition: {
         staggerChildren: 0.3,
+        duration: 0.5,
+        ease: "easeIn",
       },
     },
   };

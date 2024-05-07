@@ -1,4 +1,5 @@
 import "./Form.scss";
+import { motion } from "framer-motion";
 
 interface Props {}
 
@@ -41,6 +42,12 @@ function Form({}: Props) {
               rows={4}
             ></textarea>
           </div>
+          <motion.input
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ bounceDamping: 10, bounceStiffness: 800 }}
+            type="submit"
+          ></motion.input>
         </form>
       </div>
     </>

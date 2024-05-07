@@ -32,7 +32,7 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
         variants={ctaVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.4 }}
         className="cta-container col-layout"
       >
         <h3>{title}</h3>
