@@ -1,6 +1,5 @@
 import "./ProjectList.scss";
 import ProjectEntry from "@components/ProjectEntry/ProjectEntry";
-import { duration } from "@mui/material";
 import { motion } from "framer-motion";
 
 interface Props {
