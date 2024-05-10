@@ -9,3 +9,10 @@ header {
     margin-left: 5%;
   }
 }
+
+.logo {
+  @include breakpoint(0px, 850px) {
+    height: 100px;
+    width: 100px;
+  }
+}

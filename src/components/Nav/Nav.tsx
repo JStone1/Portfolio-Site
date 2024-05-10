@@ -33,7 +33,12 @@ function Nav() {
       <nav>
         <div className="mobile-nav-item-container hidden">
           <div className="mobile-nav-details">
-            <h2>John Stone</h2>
+            {/* <h2>John Stone</h2> */}
+            <img
+              className="logo"
+              src="/assets/jslogo4.png"
+              style={{ marginBottom: 20 }}
+            />
             <div className="cta-image-container">
               <a
                 target="blank"

@@ -5,7 +5,8 @@ function Header() {
   return (
     <>
       <header>
-        <h2>John Stone</h2>
+        {/* <h2>John Stone</h2> */}
+        <img className="logo" src="/assets/jslogo4.png" />
         <Nav />
       </header>
     </>
