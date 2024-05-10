@@ -3,7 +3,7 @@
 .form-container {
   @include centerContent(column, center);
   align-items: center;
-  height: calc(100vh - 185px);
+  // height: calc(100vh - 185px);
   width: 500px;
   margin: 0px auto;
   @include breakpoint(0px, 850px) {
