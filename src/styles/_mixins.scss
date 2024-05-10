@@ -64,12 +64,16 @@
     background-color: $accent;
     transition: background-color 0.3s;
   }
-  button {
+  button,
+  input[type="submit"] {
     background-color: $accent;
     border-color: $accent;
     &:hover {
       background-color: transparent;
     }
+  }
+  input[type="submit"] {
+    color: $primary-colour;
   }
   .dot {
     &:hover {
@@ -96,8 +100,13 @@
     background-repeat: repeat-x;
     background-size: 2px 2px;
     transition: 0.3s;
+    color: $primary-colour;
     &:hover {
       background-size: 2px 50px;
+    }
+    &:visited {
+      color: $primary-colour;
+      text-decoration: none;
     }
   }
   .project-card {

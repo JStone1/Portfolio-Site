@@ -49,14 +49,11 @@ function ExpTimeline({}: Props) {
                 developing and deploying web apps
               </span>{" "}
               {""}
-              to creating fun and compelling mobile games. Throughout my degree,
-              an emphasis was put on {""}
+              to creating fun and compelling mobile games. My degree has taught
+              me to create projects with an emphasis on {""}
               <span className="highlight-text">
-                user-focused, iterative design,
+                user-focused, iterative design.
               </span>{" "}
-              {""}
-              something that I have tried to carry through to all of my
-              projects.
             </p>
           </TimelineContent>
         </TimelineItem>
@@ -76,8 +73,8 @@ function ExpTimeline({}: Props) {
               Turing Scheme placement in Australia working with the University
               of Adelaide to complete a module in {""}
               <span className="highlight-text">VR Design and Development.</span>
-              {""} I was exposed to cutting edge technology and even created a
-              VR game of my own!
+              {/* {""} I was exposed to cutting edge technology and even created a
+              VR game of my own! */}
             </p>
           </TimelineContent>
         </TimelineItem>
@@ -97,19 +94,11 @@ function ExpTimeline({}: Props) {
               freelancer. I undertook {""}
               <span className="highlight-text">requirement gathering</span> and
               held {""}
-              <span className="highlight-text">
-                regular meetings with the clients
-              </span>{" "}
-              {""}
-              to showcase progress.
-              <br />
-              <br /> Both sites needed easy content management after handover,
-              so the decision was to build them on {""}
+              regular meetings with the clients to showcase progress. Both sites
+              needed easy content management after handover, so the decision was
+              to build them on {""}
               <span className="highlight-text">WordPress.</span>
-              {""} Site functionality was expanded by utilising appropriate
-              plugins, registering custom post types and devising custom
-              JavaScript solutions. Development was done on a local site and
-              transferred to a live server once completed.
+              {""}
             </p>
           </TimelineContent>
         </TimelineItem>
@@ -124,7 +113,16 @@ function ExpTimeline({}: Props) {
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
             <h2 className="timeline-title">Currently looking</h2>
-            <p className="timeline-desc">Hire me...</p>
+            <p className="timeline-desc">
+              I am now looking for the next opportunity to implement what I have
+              learned, and help create something fantastic! If this sounds like
+              you, please don't hesitate to{" "}
+              <NavLink to="/contact">
+                <span id="highlight-link-text" className="highlight-text">
+                  reach out!
+                </span>
+              </NavLink>
+            </p>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

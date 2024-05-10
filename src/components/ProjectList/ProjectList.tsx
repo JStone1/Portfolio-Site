@@ -85,6 +85,7 @@ function ProjectList({ projectType }: Props) {
       transition: {
         staggerChildren: 0.3,
         duration: 0.5,
+        ease: "easeIn",
       },
     },
   };
