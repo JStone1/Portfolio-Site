@@ -45,7 +45,8 @@ h6 {
 
 button,
 input[type="submit"] {
-  -webkit-appearance: none;
+  // -webkit-appearance: none;
+  appearance: none;
   border-radius: 10px;
   border: solid 2px;
   padding: 10px 25px;
