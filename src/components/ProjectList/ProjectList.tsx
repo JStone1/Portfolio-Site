@@ -1,6 +1,7 @@
 import "./ProjectList.scss";
 import ProjectEntry from "@components/ProjectEntry/ProjectEntry";
 import { motion } from "framer-motion";
+import { Fragment } from "react/jsx-runtime";
 
 interface Props {
   projectType: string;
@@ -64,7 +65,7 @@ const projects = [
   <ProjectEntry
     title="Sign Learn"
     desc="Sign Learn is an interactive learning tool prototype that aims to help people learn the alphabet in ISL (Irish Sign Language)."
-    img="/assets/bread.jpg"
+    img="/assets/bsu-thumbnail.jpg"
     languages={[
       "html5-plain",
       "css3-plain",
@@ -100,8 +101,8 @@ function ProjectList({ projectType }: Props) {
           viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
-          {projects.map((project) => {
-            return <>{project}</>;
+          {projects.map((project, index) => {
+            return <Fragment key={index}>{project}</Fragment>;
           })}
         </motion.section>
       );
@@ -115,9 +116,9 @@ function ProjectList({ projectType }: Props) {
           viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             if (project.props.projectType === "professional") {
-              return <>{project}</>;
+              return <Fragment key={index}>{project}</Fragment>;
             }
           })}
         </motion.section>
@@ -132,9 +133,9 @@ function ProjectList({ projectType }: Props) {
           viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             if (project.props.projectType === "personal") {
-              return <>{project}</>;
+              return <Fragment key={index}>{project}</Fragment>;
             }
           })}
         </motion.section>

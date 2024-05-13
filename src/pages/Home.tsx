@@ -17,7 +17,9 @@ const Home = () => {
           title="About me"
           desc={[
             "Hello, ",
-            <span className="highlight-text"> my name is John!</span>,
+            <span key="highligh-text-key" className="highlight-text">
+              my name is John!
+            </span>,
             " I specialise in front-end development, but have tried my hand at many different tech through my coding journey. Outside of that, I enjoy baking bread, playing table tennis, and walking along the beautiful south coast.",
           ]}
           background={false}

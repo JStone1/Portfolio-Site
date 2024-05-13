@@ -17,7 +17,6 @@ function ExpTimeline({}: Props) {
       document.querySelectorAll(".dot").forEach((dot) => {
         const rect = dot.getBoundingClientRect();
         if (rect.top < window.innerHeight - 250 && rect.bottom >= 0) {
-          console.log("Active dot ID:", dot.id);
           dot.classList.add("active-dot");
         }
       });

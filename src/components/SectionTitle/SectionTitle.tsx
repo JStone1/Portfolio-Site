@@ -15,22 +15,18 @@ function SectionTitle({ title, desc, background, children }: Props) {
 
   if (desc) {
     return (
-      <>
-        <div className={"title-container " + containerBg}>
-          <h2>{title}</h2>
-          <p>{desc}</p>
-          {children}
-        </div>
-      </>
+      <div className={"title-container " + containerBg}>
+        <h2>{title}</h2>
+        <p>{desc}</p>
+        {children}
+      </div>
     );
   }
   return (
-    <>
-      <div className={"title-container " + containerBg}>
-        <h2>{title}</h2>
-        {children}
-      </div>
-    </>
+    <div className={"title-container " + containerBg}>
+      <h2>{title}</h2>
+      {children}
+    </div>
   );
 }
 
