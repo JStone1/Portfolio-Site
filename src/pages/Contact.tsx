@@ -1,5 +1,5 @@
 import Layout from "@components/Layout/Layout";
-import Form from "@components/Form/Form";
+import Form from "@components/ContactForm/ContactForm";
 import ThemeSwitcher from "@components/ThemeSwitcher/ThemeSwitcher";
 
 const Contact = () => {

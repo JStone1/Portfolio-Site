@@ -1,13 +1,41 @@
-import "./Form.scss";
+import "./ContactForm.scss";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { FormEvent, useRef } from "react";
 
 interface Props {}
 
-function Form({}: Props) {
+function ContactForm({}: Props) {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    console.log(import.meta.env.TEMPLATE_ID);
+    if (form.current) {
+      emailjs
+        .sendForm("service_yci2dfh", "template_9klzpm8", form.current, {
+          publicKey: "5ZvpnCT0M5psFJ_RB",
+        })
+        .then(
+          (result) => {
+            console.log("SUCCESS...", result.text);
+            form.current?.reset();
+            alert(
+              "Thanks for sending an email, I'll get back to you as soon as possible!"
+            );
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+    }
+  };
+
   return (
     <>
       <div className="form-container">
-        <form className="contact-form">
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="contact-form-text">
             <h1>Drop me a message</h1>
             <p>
@@ -20,7 +48,7 @@ function Form({}: Props) {
             <input
               className="text-input"
               type="text"
-              name="name"
+              name="user_name"
               placeholder="Enter your name"
             ></input>
           </div>
@@ -29,8 +57,17 @@ function Form({}: Props) {
             <input
               className="text-input"
               type="email"
-              name="email"
+              name="user_email"
               placeholder="Enter your email"
+            ></input>
+          </div>
+          <div className="form-field">
+            <label>Subject</label>
+            <input
+              className="text-input"
+              type="text"
+              name="subject"
+              placeholder="Subject"
             ></input>
           </div>
           <div className="form-field">
@@ -54,4 +91,4 @@ function Form({}: Props) {
   );
 }
 
-export default Form;
+export default ContactForm;
