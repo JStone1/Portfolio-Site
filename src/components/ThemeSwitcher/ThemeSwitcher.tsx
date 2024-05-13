@@ -24,15 +24,12 @@ function ThemeSwitcher({}: Props) {
 
   // "!" lets ts know that it will NOT be null
   const handleOrangeColourClick = () => {
-    console.log(orangeInput?.current?.id);
     storeTheme(orangeInput?.current?.id!);
   };
   const handleGreenColourClick = () => {
-    console.log(greenInput?.current?.id);
     storeTheme(greenInput?.current?.id!);
   };
   const handlePinkColourClick = () => {
-    console.log(pinkInput?.current?.id);
     storeTheme(pinkInput?.current?.id!);
   };
 
