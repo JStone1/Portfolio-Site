@@ -1,11 +1,20 @@
 import "./ContactForm.scss";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FormEvent, useRef } from "react";
+import { FormEvent, useEffect, useRef, useState } from "react";
+import { Button, Snackbar, Alert, SnackbarContent } from "@mui/material";
 
 interface Props {}
 
 function ContactForm({}: Props) {
+  useEffect(() => {
+    setTimeout(() => {
+      grecaptcha.render("recaptcha-form", {
+        sitekey: "6LfcWNwpAAAAALoZHzaC7Q3OoR8SZfWim-pmWTlY",
+      });
+    }, 0.1);
+  }, []);
+
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
@@ -32,10 +41,43 @@ function ContactForm({}: Props) {
     }
   };
 
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
     <>
+      <Button onClick={handleClick}>Open Snackbar</Button>
+      <Snackbar
+        open={open}
+        onClose={handleClose}
+        autoHideDuration={6000}
+        anchorOrigin={{ horizontal: "center", vertical: "bottom" }}
+      >
+        <SnackbarContent
+          message="Thanks for your message - 
+          I'll get back to you as soon as possible!"
+          style={{
+            backgroundColor: "#272932",
+            color: "#e7ecef",
+            borderStyle: "solid",
+            borderWidth: "2px",
+          }}
+          className="snackbar"
+        ></SnackbarContent>
+      </Snackbar>
       <div className="form-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <div
+            className="g-recaptcha"
+            data-sitekey="6LfcWNwpAAAAALoZHzaC7Q3OoR8SZfWim-pmWTlY"
+          ></div>
           <div className="contact-form-text">
             <h1>Drop me a message</h1>
             <p>
@@ -79,6 +121,8 @@ function ContactForm({}: Props) {
               rows={4}
             ></textarea>
           </div>
+          <div id="recaptcha-form"></div>
+
           <motion.input
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
