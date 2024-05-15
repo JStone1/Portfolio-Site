@@ -29,6 +29,11 @@
       margin: 2rem 0px;
     }
   }
+  @include breakpoint(0px, 320px) {
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+  }
 }
 
 .divider {

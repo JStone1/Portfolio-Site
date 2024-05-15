@@ -59,4 +59,9 @@
     height: 250px;
     margin-bottom: -150px;
   }
+  @include breakpoint(0px, 350px) {
+    width: 200px;
+    height: 200px;
+    margin-bottom: -150px;
+  }
 }

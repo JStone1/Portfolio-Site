@@ -11,8 +11,13 @@ header {
 }
 
 .logo {
+  margin: 15px 0px 15px 15px;
   @include breakpoint(0px, 850px) {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
+  }
+  @include breakpoint(0px, 450px) {
+    height: 45px;
+    width: 45px;
   }
 }

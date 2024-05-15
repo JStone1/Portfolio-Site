@@ -42,6 +42,10 @@ nav a.active {
   }
 }
 
+#mobile-nav-logo {
+  margin: 0;
+}
+
 .mobile-nav-details {
   @include centerContent(column, center);
   margin-bottom: 30px;
