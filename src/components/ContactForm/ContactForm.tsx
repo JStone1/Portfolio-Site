@@ -2,7 +2,7 @@ import "./ContactForm.scss";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { Button, Snackbar, SnackbarContent } from "@mui/material";
+import { Snackbar, SnackbarContent } from "@mui/material";
 
 interface Props {}
 
