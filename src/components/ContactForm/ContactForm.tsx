@@ -20,8 +20,11 @@ function ContactForm({}: Props) {
   const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    console.log(import.meta.env.TEMPLATE_ID);
     if (form.current) {
+      if (grecaptcha.getResponse() === "") {
+        console.log("recaptcha not checked");
+        document;
+      }
       emailjs
         .sendForm("service_yci2dfh", "template_9klzpm8", form.current, {
           publicKey: "5ZvpnCT0M5psFJ_RB",
@@ -29,10 +32,9 @@ function ContactForm({}: Props) {
         .then(
           (result) => {
             console.log("SUCCESS...", result.text);
+            handleClick();
+            grecaptcha.reset();
             form.current?.reset();
-            alert(
-              "Thanks for sending an email, I'll get back to you as soon as possible!"
-            );
           },
           (error) => {
             console.log("FAILED...", error);
@@ -53,7 +55,6 @@ function ContactForm({}: Props) {
 
   return (
     <>
-      <Button onClick={handleClick}>Open Snackbar</Button>
       <Snackbar
         open={open}
         onClose={handleClose}
@@ -74,10 +75,6 @@ function ContactForm({}: Props) {
       </Snackbar>
       <div className="form-container">
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-          <div
-            className="g-recaptcha"
-            data-sitekey="6LfcWNwpAAAAALoZHzaC7Q3OoR8SZfWim-pmWTlY"
-          ></div>
           <div className="contact-form-text">
             <h1>Drop me a message</h1>
             <p>
