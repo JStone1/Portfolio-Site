@@ -35,8 +35,9 @@ function Nav() {
           <div className="mobile-nav-details">
             {/* <h2>John Stone</h2> */}
             <img
+              id="mobile-nav-logo"
               className="logo"
-              src="/assets/jslogo4.png"
+              src="/assets/jslogo.svg"
               style={{ marginBottom: 20 }}
             />
             <div className="cta-image-container">

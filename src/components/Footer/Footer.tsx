@@ -8,7 +8,7 @@ function Footer({ topMargin }: Props) {
   return (
     <>
       <footer style={{ marginTop: topMargin + "px" }}>
-        <h3>John Stone</h3>
+        <img className="logo" src="/assets/jslogo.svg" />
         <div className="social-container">
           <a
             target="blank"
