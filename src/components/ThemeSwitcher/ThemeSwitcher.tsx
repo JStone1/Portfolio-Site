@@ -13,14 +13,14 @@ function ThemeSwitcher({}: Props) {
     const activeTheme = localStorage.getItem("theme");
     if (greenInput?.current?.id === activeTheme) {
       greenInput.current.checked = true;
-    } else if (pinkInput?.current?.id === activeTheme) {
-      pinkInput.current.checked = true;
+    } else if (blueInput?.current?.id === activeTheme) {
+      blueInput.current.checked = true;
     }
   };
 
   const orangeInput = useRef<HTMLInputElement>(null);
   const greenInput = useRef<HTMLInputElement>(null);
-  const pinkInput = useRef<HTMLInputElement>(null);
+  const blueInput = useRef<HTMLInputElement>(null);
 
   // "!" lets ts know that it will NOT be null
   const handleOrangeColourClick = () => {
@@ -29,8 +29,8 @@ function ThemeSwitcher({}: Props) {
   const handleGreenColourClick = () => {
     storeTheme(greenInput?.current?.id!);
   };
-  const handlePinkColourClick = () => {
-    storeTheme(pinkInput?.current?.id!);
+  const handleBlueColourClick = () => {
+    storeTheme(blueInput?.current?.id!);
   };
 
   // runs getTheme() when page loads similar to "componentDidMount()"
@@ -82,15 +82,15 @@ function ThemeSwitcher({}: Props) {
             ref={greenInput}
             onClick={handleGreenColourClick}
           />
-          <label className="visually-hidden" htmlFor="pink">
-            Pink
+          <label className="visually-hidden" htmlFor="blue">
+            Blue
           </label>
           <input
             type="radio"
             name="theme"
-            id="pink"
-            ref={pinkInput}
-            onClick={handlePinkColourClick}
+            id="blue"
+            ref={blueInput}
+            onClick={handleBlueColourClick}
           />
         </fieldset>
       </motion.form>

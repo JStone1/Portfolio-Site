@@ -45,12 +45,12 @@
   }
 }
 
-#pink {
-  border-color: $accent-colour-pink;
-  background-color: $accent-colour-pink;
+#blue {
+  border-color: $accent-colour-blue;
+  background-color: $accent-colour-blue;
   &:checked {
     border-color: $primary-colour;
-    background-color: $accent-colour-pink;
+    background-color: $accent-colour-blue;
   }
   &:hover {
     border: 0.2em solid $primary-colour;
@@ -63,6 +63,6 @@
 :root:has(#green:checked) {
   @include theme($accent-colour-green);
 }
-:root:has(#pink:checked) {
-  @include theme($accent-colour-pink);
+:root:has(#blue:checked) {
+  @include theme($accent-colour-blue);
 }
