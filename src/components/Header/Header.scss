@@ -6,12 +6,11 @@ header {
   color: $secondary-colour;
   h2 {
     font-weight: 400;
-    margin-left: 5%;
   }
 }
 
 .logo {
-  margin: 15px 0px 15px 15px;
+  margin: 15px 0px 15px 2%;
   @include breakpoint(0px, 850px) {
     height: 60px;
     width: 60px;
