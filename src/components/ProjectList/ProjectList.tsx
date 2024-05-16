@@ -43,7 +43,12 @@ const projects = [
     title="Mate Rate"
     desc="Mate Rate is a satirical take on standard social media, with a focus on seeking other people’s approval via the content they post."
     img="/assets/materate-thumbnail.jpg"
-    languages={["html5-plain", "sass-plain", "javascript-plain"]}
+    languages={[
+      "sass-plain",
+      "javascript-plain",
+      "nodejs-plain-wordmark",
+      "mongodb-plain",
+    ]}
     projectType="personal"
     gitURL="https://github.com/JStone1/Mate-Rate"
     siteURL="https://mate-rate.glitch.me/"
@@ -63,9 +68,17 @@ const projects = [
     siteURL="https://jstone1.github.io/Deep-Dive/"
   />,
   <ProjectEntry
+    title="Killing Blow"
+    desc="Killing Blow is a simple but addictive game where the aim is to destroy the smug-looking (and probably evil) aliens in deep space! Made using Construct 3, a game making software."
+    img="/assets/killingblow-thumbnail.png"
+    languages={["javascript-plain"]}
+    projectType="personal"
+    siteURL="https://jstone1.itch.io/killing-blow"
+  />,
+  <ProjectEntry
     title="Sign Learn"
     desc="Sign Learn is an interactive learning tool prototype that aims to help people learn the alphabet in ISL (Irish Sign Language)."
-    img="/assets/bsu-thumbnail.jpg"
+    img="/assets/signlearn-thumbnail.png"
     languages={[
       "html5-plain",
       "css3-plain",
@@ -77,6 +90,18 @@ const projects = [
     siteURL="https://jstone1.github.io/Sign-Learn/"
   />,
 ];
+
+function shuffleArray(array: Array<JSX.Element>) {
+  const shuffledArray = [...array];
+
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
+const shuffledProjects = shuffleArray(projects);
 
 function ProjectList({ projectType }: Props) {
   const projectContainerVariants = {
@@ -101,7 +126,7 @@ function ProjectList({ projectType }: Props) {
           viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
-          {projects.map((project, index) => {
+          {shuffledProjects.map((project, index) => {
             return <Fragment key={index}>{project}</Fragment>;
           })}
         </motion.section>
