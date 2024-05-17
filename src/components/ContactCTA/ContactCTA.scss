@@ -9,6 +9,7 @@
   padding: 20px 20px;
   border-radius: 10px;
   margin: 0 auto 50px;
+  text-align: center;
   h3 {
     font-size: clamp(0.8rem, 2.5vw + 1rem, 1.6rem);
   }
@@ -43,7 +44,7 @@
 
 .cta-image-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 3em;
   @include breakpoint(0px, 600px) {
     flex-direction: row;
@@ -63,7 +64,7 @@
 }
 
 .cta-button-container {
-  align-self: flex-end;
+  align-self: center;
   @include breakpoint(0px, 600px) {
     align-self: center;
   }

@@ -36,23 +36,23 @@ function ContactCTA({ title, prompt, link, desc }: Props) {
         className="cta-container col-layout"
       >
         <h3>{title}</h3>
+        <div className="cta-image-container">
+          <a
+            target="blank"
+            className="cta-image"
+            href="https://github.com/JStone1"
+          >
+            <i className={"devicon-github-plain language-icon"}></i>
+          </a>
+          <a
+            target="blank"
+            className="cta-image"
+            href="https://www.linkedin.com/in/john-stone-50065618b"
+          >
+            <i className="devicon-linkedin-plain language-icon"></i>
+          </a>
+        </div>
         <div className="info-container">
-          <div className="cta-image-container">
-            <a
-              target="blank"
-              className="cta-image"
-              href="https://github.com/JStone1"
-            >
-              <i className={"devicon-github-plain language-icon"}></i>
-            </a>
-            <a
-              target="blank"
-              className="cta-image"
-              href="https://www.linkedin.com/in/john-stone-50065618b"
-            >
-              <i className="devicon-linkedin-plain language-icon"></i>
-            </a>
-          </div>
           <p className="cta-desc">{desc}</p>
         </div>
         <NavLink className={"cta-button-container"} to={"/" + link}>
