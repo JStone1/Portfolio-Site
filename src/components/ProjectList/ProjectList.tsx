@@ -14,7 +14,7 @@ const projects = [
     img="/assets/portfolio-thumbnail.png"
     languages={["react-plain", "typescript-plain", "sass-plain", "figma-plain"]}
     projectType="personal"
-    siteURL="jdstone.uk"
+    siteURL="/"
     gitURL="https://github.com/JStone1/Portfolio-Site"
   />,
   <ProjectEntry
