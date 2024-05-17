@@ -7,6 +7,17 @@ import { Snackbar, SnackbarContent } from "@mui/material";
 interface Props {}
 
 function ContactForm({}: Props) {
+  const formVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.1,
+        duration: 1,
+      },
+    },
+  };
   useEffect(() => {
     setTimeout(() => {
       grecaptcha.render("recaptcha-form", {
@@ -74,12 +85,24 @@ function ContactForm({}: Props) {
         ></SnackbarContent>
       </Snackbar>
       <div className="form-container">
-        <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <motion.form
+          variants={formVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.4 }}
+          ref={form}
+          onSubmit={sendEmail}
+          className="contact-form"
+        >
           <div className="contact-form-text">
             <h1>Drop me a message</h1>
             <p>
               Feel free to use the form below to reach out to me about anything
               you want to discuss!
+            </p>
+            <p>
+              Alternatively, you can email me at{" "}
+              <strong>jdstone141@gmail.com</strong>
             </p>
           </div>
           <div className="form-field">
@@ -126,7 +149,7 @@ function ContactForm({}: Props) {
             transition={{ bounceDamping: 10, bounceStiffness: 800 }}
             type="submit"
           ></motion.input>
-        </form>
+        </motion.form>
       </div>
     </>
   );
