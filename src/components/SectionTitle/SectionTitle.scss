@@ -8,9 +8,11 @@
   p {
     width: 40%;
     font-size: clamp(0.8rem, 1vw + 1rem, 1.2rem);
+    color: $primary-colour;
   }
   h2 {
     font-weight: 700;
+    color: $primary-colour;
   }
   @include breakpoint(0px, 1024px) {
     margin: 300px auto 0px auto;
@@ -29,6 +31,9 @@
   background-color: $primary-colour;
   color: $secondary-colour;
   margin: 250px auto 250px auto;
+  h2 {
+    color: $secondary-colour;
+  }
   @include breakpoint(0px, 600px) {
     margin: 150px auto 100px auto;
   }

@@ -5,6 +5,9 @@
   @include breakpoint(0px, 600px) {
     margin: 0px 0px;
   }
+  p {
+    color: $primary-colour;
+  }
 }
 
 .timeline-item-container {

@@ -46,34 +46,20 @@ function ExpTimeline({}: Props) {
               wide variety of exciting projects, from {""}
               <span className="highlight-text">
                 developing and deploying web apps
-              </span>{" "}
-              {""}
-              to creating fun and compelling mobile games. My degree has taught
-              me to create projects with an emphasis on {""}
+              </span>
+              , creating fun and compelling mobile games. My degree has taught
+              me to leverage technology innovatively and to prioritise {""}
               <span className="highlight-text">
-                user-focused, iterative design.
+                user-focused, iterative design
               </span>{" "}
-            </p>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent className="date" color="text.secondary">
-            July 2022
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot id="dot2" className="dot" />
-
-            <TimelineConnector className="line" />
-          </TimelineSeparator>
-          <TimelineContent className="timeline-item-container">
-            <h2 className="timeline-title">Turing Scheme</h2>
-            <p className="timeline-desc">
-              I was fortunate enough to be selected by my university for the
-              Turing Scheme placement in Australia working with the University
-              of Adelaide to complete a module in {""}
+              in all my projects.
+              <br />
+              <br />I was also fortunate enough to be selected by my university
+              for the <span className="highlight-text">Turing Scheme</span>{" "}
+              placement in Australia. I worked directly with the University of
+              Adelaide, was introduced to cutting edge technology, and completed
+              a module in {""}
               <span className="highlight-text">VR Design and Development.</span>
-              {/* {""} I was exposed to cutting edge technology and even created a
-              VR game of my own! */}
             </p>
           </TimelineContent>
         </TimelineItem>
@@ -82,20 +68,20 @@ function ExpTimeline({}: Props) {
             Aug-Nov 2023
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot id="dot3" className="dot" />
+            <TimelineDot id="dot2" className="dot" />
             <TimelineConnector className="line" />
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
-            <h2 className="timeline-title">Post grad work</h2>
+            <h2 className="timeline-title">Post graduation</h2>
             <p className="timeline-desc">
-              After graduation, I got stuck straight into developing two
-              websites, one as part of an internship and the other as a
-              freelancer. I undertook {""}
+              After completing my degree, I immediately started the developent
+              of two websites: one as an intern and the other as a freelancer.
+              Throughout these projects, I took charge of {""}
               <span className="highlight-text">requirement gathering</span> and
               held {""}
-              regular meetings with the clients to showcase progress. Both sites
-              needed easy content management after handover, so the decision was
-              to build them on {""}
+              regular meetings with the clients to showcase ongoing progress.
+              Recognising the importance of easy content management after
+              handover, I opted to to build both sites using {""}
               <span className="highlight-text">WordPress.</span>
               {""}
             </p>
@@ -107,18 +93,18 @@ function ExpTimeline({}: Props) {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <NavLink style={{ textDecoration: "none" }} to="/contact">
-              <TimelineDot id="dot4" className="dot"></TimelineDot>
+              <TimelineDot id="dot3" className="dot"></TimelineDot>
             </NavLink>
           </TimelineSeparator>
           <TimelineContent className="timeline-item-container">
             <h2 className="timeline-title">Currently looking</h2>
             <p className="timeline-desc">
-              I am now looking for the next opportunity to implement what I have
-              learned, and help create something fantastic! If this sounds like
-              you, please don't hesitate to{" "}
+              I'm currently seeking the next opportunity to apply my knowledge
+              and contribute to the creation of exceptional projects. If this
+              aligns with you, please feel free to {""}
               <NavLink to="/contact">
                 <span id="highlight-link-text" className="highlight-text">
-                  reach out!
+                  get in touch!
                 </span>
               </NavLink>
             </p>

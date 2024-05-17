@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import "./SectionTitle.scss";
 
 interface Props {
-  title: string;
+  title: string | ReactNode;
   desc?: string | ReactNode;
   background: boolean;
   children?: ReactNode;

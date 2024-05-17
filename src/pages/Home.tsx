@@ -14,30 +14,37 @@ const Home = () => {
           imageURL="/assets/profile-img.jpg"
         />
         <SectionTitle
-          title="About me"
+          title={
+            <>
+              Hello, {""}
+              <span key="highligh-text-key" className="highlight-text">
+                I'm John!
+              </span>
+            </>
+          }
           desc={[
-            "Hello, ",
+            "Primarily specialising in ",
             <span key="highligh-text-key" className="highlight-text">
-              my name is John!
+              front-end development
             </span>,
-            " I specialise in front-end development, but have tried my hand at many different tech through my coding journey. Outside of that, I enjoy baking bread, playing table tennis, and walking along the beautiful south coast.",
+            ", my goal is to create outstanding user experiences on the web. I love learning new technologies and have experimented with many before, always eager to explore something new. Outside of that, I enjoy playing table tennis, badminton, and walking along the beautiful south coast!",
           ]}
           background={false}
         />
         <ExpTimeline />
         <ContactCTA
-          title="See my previous projects"
+          title="View my previous projects"
           prompt="Explore work"
           link="projects"
         />
-        <SectionTitle title="My Toolkit" background={true}>
+        <SectionTitle title="Current Toolkit" background={true}>
           <ToolkitList></ToolkitList>
         </SectionTitle>
         <ContactCTA
           title="Interested in what you see?"
           prompt="Let's chat!"
           link="contact"
-          desc="Please don't hesitate to get in touch and we can make something great together!"
+          desc="Get in contact and we can make something great together!"
         />
       </Layout>
     </>

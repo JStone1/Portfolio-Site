@@ -10,16 +10,16 @@ interface Props {
 const projects = [
   <ProjectEntry
     title="My Portfolio"
-    desc="Personal portfolio site that you are currently on! First large project using React and TypeScript."
+    desc="Designed and developed my personal portfolio site, to display my past and future work. Built using React alongside TypeScript, and hosted on Vercel."
     img="/assets/portfolio-thumbnail.png"
     languages={["react-plain", "typescript-plain", "sass-plain", "figma-plain"]}
     projectType="personal"
-    siteURL="http://localhost:5173/"
+    siteURL="jdstone.uk"
     gitURL="https://github.com/JStone1/Portfolio-Site"
   />,
   <ProjectEntry
     title="BSU Computing"
-    desc="Web development internship at Bath Spa University, designing and building a website for the computing department to showcase student work."
+    desc="Web development internship at Bath Spa University, designing and building a website for the computing department to showcase student work. Created using ACF and Elementor."
     img="/assets/bsu-thumbnail.jpg"
     languages={[
       "wordpress-plain",
@@ -32,7 +32,7 @@ const projects = [
   />,
   <ProjectEntry
     title="Podcasting Toolkit"
-    desc="Created a website for a client to showcase their research in using podcasts as a learning resource within higher education."
+    desc="A platform to showcase client's research in using podcasts as a learning resource within higher education. Built using WordPress theme 'Blogus' and utilised ACF for quick content updates. "
     img="/assets/podcast-thumbnail.jpg"
     languages={["wordpress-plain", "javascript-plain"]}
     projectType="professional"
@@ -41,7 +41,7 @@ const projects = [
 
   <ProjectEntry
     title="Mate Rate"
-    desc="Mate Rate is a satirical take on standard social media, with a focus on seeking other people’s approval via the content they post."
+    desc="Mate Rate is a web app that takes a satirical view on standard social media. Built with Express.js, and Mongo as the backend, user's seek the approval of others via a post rating system."
     img="/assets/materate-thumbnail.jpg"
     languages={[
       "sass-plain",
@@ -55,7 +55,7 @@ const projects = [
   />,
   <ProjectEntry
     title="Deep Dive"
-    desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles."
+    desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles. An fun experiment in Three.js, that hopes to raise penguin awareness."
     img="/assets/deepdive-thumbnail.jpg"
     languages={[
       "html5-plain",
@@ -77,7 +77,7 @@ const projects = [
   />,
   <ProjectEntry
     title="Sign Learn"
-    desc="Sign Learn is an interactive learning tool prototype that aims to help people learn the alphabet in ISL (Irish Sign Language)."
+    desc="Sign Learn is an interactive learning tool that aims to help people learn the alphabet in ISL (Irish Sign Language). This prototype utilises p5.js and an ml5.js machine-learning model. "
     img="/assets/signlearn-thumbnail.png"
     languages={[
       "html5-plain",
