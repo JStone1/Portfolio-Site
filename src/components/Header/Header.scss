@@ -10,7 +10,6 @@ header {
 }
 
 .logo {
-  margin: 15px 0px 15px 2%;
   @include breakpoint(0px, 850px) {
     height: 60px;
     width: 60px;
@@ -18,5 +17,16 @@ header {
   @include breakpoint(0px, 450px) {
     height: 45px;
     width: 45px;
+  }
+}
+
+.logo-title-container {
+  @include centerContent(row, center);
+  margin: 15px 0px 15px 2%;
+  h2 {
+    font-size: clamp(0.8rem, 2.5vw + 1rem, 2rem);
+    margin-left: 25px;
+
+    width: 9ch;
   }
 }
