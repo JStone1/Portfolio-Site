@@ -89,7 +89,7 @@ function ExpTimeline({}: Props) {
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent className="date" color="text.secondary">
-            Now
+            Present
           </TimelineOppositeContent>
           <TimelineSeparator>
             <NavLink style={{ textDecoration: "none" }} to="/contact">
@@ -99,9 +99,9 @@ function ExpTimeline({}: Props) {
           <TimelineContent className="timeline-item-container">
             <h2 className="timeline-title">Currently looking</h2>
             <p className="timeline-desc">
-              I'm currently seeking the next opportunity to apply my knowledge
-              and contribute to the creation of exceptional projects. If this
-              aligns with you, please feel free to {""}
+              I'm now seeking the next opportunity to apply my knowledge and
+              contribute to the creation of exceptional projects. If this aligns
+              with you, please feel free to {""}
               <NavLink to="/contact">
                 <span id="highlight-link-text" className="highlight-text">
                   get in touch!
