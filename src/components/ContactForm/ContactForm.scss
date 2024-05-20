@@ -30,11 +30,15 @@
 
 .contact-form-text {
   text-align: center;
+  h1 {
+    font-weight: 700;
+    color: $primary-colour;
+  }
 }
 
 label {
   font-family: "Titillium Web", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .text-input {
