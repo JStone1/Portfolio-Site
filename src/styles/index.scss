@@ -17,6 +17,10 @@ $bottom-box-shadow: 0px 8px 8px #0d0f16;
 
 /* Global stylings */
 
+html {
+  background-color: $primary-colour;
+}
+
 body {
   margin: 0;
   background-color: $secondary-colour;
