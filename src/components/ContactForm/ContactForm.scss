@@ -1,5 +1,10 @@
 @import "src/styles/index.scss";
 
+.email-link {
+  color: $primary-colour;
+  text-decoration: underline;
+}
+
 .form-container {
   @include centerContent(column, center);
   align-items: center;
