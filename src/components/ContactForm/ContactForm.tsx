@@ -102,7 +102,9 @@ function ContactForm({}: Props) {
             </p>
             <p>
               Alternatively, you can email me at{" "}
-              <strong>jdstone141@gmail.com</strong>
+              <a className="email-link" href="mailto: jdstone141@gmail.com">
+                <strong>jdstone141@gmail.com</strong>
+              </a>
             </p>
           </div>
           <div className="form-field">
