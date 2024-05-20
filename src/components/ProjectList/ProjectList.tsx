@@ -91,17 +91,19 @@ const projects = [
   />,
 ];
 
-function shuffleArray(array: Array<JSX.Element>) {
-  const shuffledArray = [...array];
+/* Code to randomise projects below */
 
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-}
+// function shuffleArray(array: Array<JSX.Element>) {
+//   const shuffledArray = [...array];
 
-const shuffledProjects = shuffleArray(projects);
+//   for (let i = shuffledArray.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+//   }
+//   return shuffledArray;
+// }
+
+// const shuffledProjects = shuffleArray(projects);
 
 function ProjectList({ projectType }: Props) {
   const projectContainerVariants = {
