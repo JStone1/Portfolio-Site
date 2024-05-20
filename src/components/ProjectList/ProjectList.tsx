@@ -126,7 +126,7 @@ function ProjectList({ projectType }: Props) {
           viewport={{ once: true, amount: 0.1 }}
           className="project-container"
         >
-          {shuffledProjects.map((project, index) => {
+          {projects.map((project, index) => {
             return <Fragment key={index}>{project}</Fragment>;
           })}
         </motion.section>
