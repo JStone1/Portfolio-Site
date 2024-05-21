@@ -1,3 +1,9 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    {
+      "source": "/browserconfig.xml",
+      "destination": "/browserconfig.xml"
+    },
+    { "source": "/(.*)", "destination": "/" }
+  ]
 }
