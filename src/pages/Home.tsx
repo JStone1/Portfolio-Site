@@ -11,7 +11,7 @@ const Home = () => {
         <Hero
           title="John Stone"
           desc="Web Developer and Creative Technologist "
-          imageURL="/assets/profile-img.jpg"
+          imageURL="/assets/profile-img.webp"
         />
         <SectionTitle
           title={
