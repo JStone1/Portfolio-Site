@@ -10,7 +10,7 @@ const Projects = () => {
         <Hero
           title="Projects"
           desc="A collection of commercial and university creations"
-          imageURL="/assets/beach2.jpg"
+          imageURL="/assets/beach.jpg"
           isReverse={true}
         />
         <SectionTitle
