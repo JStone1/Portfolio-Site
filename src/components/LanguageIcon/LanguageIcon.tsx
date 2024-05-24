@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 interface Props {
   lang: string;
-  title: string;
+  title?: string;
   shouldAnimate: boolean;
   size?: number;
 }
