@@ -7,6 +7,10 @@ import { Snackbar, SnackbarContent } from "@mui/material";
 interface Props {}
 
 function ContactForm({}: Props) {
+  const siteKey = import.meta.env.VITE_GRECAPTCHA_SITEKEY;
+  const serviceID = import.meta.env.VITE_SERVICE_ID;
+  const templateID = import.meta.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const formVariants = {
     hidden: { opacity: 0, y: 10 },
     visible: {
@@ -21,7 +25,7 @@ function ContactForm({}: Props) {
   useEffect(() => {
     setTimeout(() => {
       grecaptcha.render("recaptcha-form", {
-        sitekey: "6LfcWNwpAAAAALoZHzaC7Q3OoR8SZfWim-pmWTlY",
+        sitekey: siteKey,
       });
     }, 0.1);
   }, []);
@@ -37,8 +41,8 @@ function ContactForm({}: Props) {
         document;
       }
       emailjs
-        .sendForm("service_yci2dfh", "template_9klzpm8", form.current, {
-          publicKey: "5ZvpnCT0M5psFJ_RB",
+        .sendForm(serviceID, templateID, form.current, {
+          publicKey: publicKey,
         })
         .then(
           (result) => {
