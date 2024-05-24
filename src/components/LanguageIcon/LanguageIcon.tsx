@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 
 interface Props {
   lang: string;
+  title: string;
   shouldAnimate: boolean;
   size?: number;
 }
 
-function LanguageIcon({ lang, shouldAnimate, size }: Props) {
+function LanguageIcon({ lang, title, shouldAnimate, size }: Props) {
   const languageIconVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
@@ -17,6 +18,7 @@ function LanguageIcon({ lang, shouldAnimate, size }: Props) {
     return (
       <motion.span variants={languageIconVariants}>
         <i
+          title={title}
           style={{ fontSize: size }}
           className={`devicon-${lang} language-icon`}
         ></i>
