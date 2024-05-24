@@ -26,6 +26,14 @@ footer {
   width: 100%;
 }
 
+.logo-copyright-container {
+  @include centerContent(row, center);
+  gap: 1em;
+  p {
+    width: 100%;
+  }
+}
+
 .social-container {
   @include centerContent(row, space-around);
   gap: 2em;
