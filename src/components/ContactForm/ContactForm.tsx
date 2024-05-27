@@ -118,6 +118,7 @@ function ContactForm({}: Props) {
               type="text"
               name="user_name"
               placeholder="Enter your name"
+              required
             ></input>
           </div>
           <div className="form-field">
@@ -127,6 +128,7 @@ function ContactForm({}: Props) {
               type="email"
               name="user_email"
               placeholder="Enter your email"
+              required
             ></input>
           </div>
           <div className="form-field">
@@ -136,6 +138,8 @@ function ContactForm({}: Props) {
               type="text"
               name="subject"
               placeholder="Subject"
+              maxLength={40}
+              required
             ></input>
           </div>
           <div className="form-field">
@@ -144,6 +148,7 @@ function ContactForm({}: Props) {
               className="text-input"
               name="message"
               placeholder="Enter your message"
+              required
               rows={4}
             ></textarea>
           </div>
