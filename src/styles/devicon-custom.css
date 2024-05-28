@@ -64,3 +64,46 @@
 .devicon-cplusplus-plain-wordmark:before {
   content: "";
 }
+
+.devicon-github-original:before,
+.devicon-github-plain:before {
+  content: "";
+}
+.devicon-github-original-wordmark:before {
+  content: "";
+}
+
+.devicon-linkedin-plain:before {
+  content: "";
+}
+.devicon-linkedin-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-php-plain:before {
+  content: "";
+}
+
+.devicon-p5js-original:before,
+.devicon-p5js-plain:before,
+.devicon-p5js-original-wordmark:before,
+.devicon-p5js-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-nodejs-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-mongodb-plain:before {
+  content: "";
+}
+
+.devicon-threejs-original-wordmark:before {
+  content: "";
+}
+
+.devicon-typescript-plain:before,
+.devicon-typescript-original:before {
+  content: "";
+}
