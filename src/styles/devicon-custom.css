@@ -1,0 +1,66 @@
+﻿@font-face {
+  font-family: "devicon";
+  src: url("fonts/devicon.ttf") format("truetype"),
+    url("fonts/devicon.woff") format("woff"),
+    url("fonts/devicon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="devicon-"],
+[class*=" devicon-"] {
+  font-family: "devicon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.devicon-javascript-plain:before {
+  content: "";
+}
+
+.devicon-css3-plain:before {
+  content: "";
+}
+
+.devicon-html5-plain:before {
+  content: "";
+}
+
+.devicon-wordpress-plain:before {
+  content: "";
+}
+.devicon-wordpress-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-react-original:before,
+.devicon-react-plain:before {
+  content: "";
+}
+.devicon-react-original-wordmark:before,
+.devicon-react-plain-wordmark:before {
+  content: "";
+}
+
+.devicon-sass-original:before,
+.devicon-sass-plain:before {
+  content: "";
+}
+
+.devicon-figma-plain:before {
+  content: "";
+}
+
+.devicon-cplusplus-line:before,
+.devicon-cplusplus-line-wordmark:before {
+  content: "";
+}
+.devicon-cplusplus-plain:before,
+.devicon-cplusplus-plain-wordmark:before {
+  content: "";
+}
