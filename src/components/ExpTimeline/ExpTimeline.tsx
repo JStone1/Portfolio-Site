@@ -92,7 +92,11 @@ function ExpTimeline({}: Props) {
             Present
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <NavLink style={{ textDecoration: "none" }} to="/contact">
+            <NavLink
+              style={{ textDecoration: "none" }}
+              aria-label="Contact John Stone"
+              to="/contact"
+            >
               <TimelineDot id="dot3" className="dot"></TimelineDot>
             </NavLink>
           </TimelineSeparator>

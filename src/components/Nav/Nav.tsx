@@ -101,15 +101,23 @@ function Nav() {
           </NavLink>
         </div>
         <ul className="nav-item-container">
-          <NavLink onClick={() => scrollToTop()} to="/">
-            <li>About</li>
-          </NavLink>
-          <NavLink onClick={() => scrollToTop()} to="/projects">
-            <li>Projects</li>
-          </NavLink>
-          <NavLink onClick={() => scrollToTop()} to="/contact">
-            <li>Contact</li>
-          </NavLink>
+          <li>
+            <NavLink onClick={() => scrollToTop()} to="/">
+              About
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink onClick={() => scrollToTop()} to="/projects">
+              Projects
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink onClick={() => scrollToTop()} to="/contact">
+              Contact
+            </NavLink>
+          </li>
         </ul>
         <div onClick={handleMobileNav} className={"hamburger-container"}>
           <Hamburger
