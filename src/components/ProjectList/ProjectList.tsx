@@ -75,7 +75,7 @@ const projects = [
   <ProjectEntry
     title="Killing Blow"
     desc="Killing Blow is a simple but addictive game where the aim is to destroy the smug-looking (and probably evil) aliens in deep space! Made using Construct 3, a game making software."
-    img="/assets/killingblow-thumbnail.png"
+    img="/assets/killingblow-thumbnail.jpg"
     imgAlt="Screenshot of Killing Blow project, displaying a project title with a red spaceship and a pink alien"
     languages={["javascript-plain"]}
     projectType="personal"
