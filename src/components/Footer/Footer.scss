@@ -5,11 +5,6 @@ footer {
   background-color: $primary-colour;
   color: $secondary-colour;
   text-align: center;
-  // margin-top: 250px;
-  // padding: 0px 50px;
-  svg {
-    margin: 15px 0px 15px 2%;
-  }
   h3 {
     font-size: 24px;
   }
@@ -29,6 +24,8 @@ footer {
 .logo-copyright-container {
   @include centerContent(row, center);
   gap: 1em;
+  margin: 15px 0px 15px 2%;
+
   p {
     width: 100%;
   }
