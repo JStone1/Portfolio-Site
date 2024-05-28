@@ -100,7 +100,7 @@ function Nav() {
             <li>Contact</li>
           </NavLink>
         </div>
-        <div className="nav-item-container">
+        <ul className="nav-item-container">
           <NavLink onClick={() => scrollToTop()} to="/">
             <li>About</li>
           </NavLink>
@@ -110,7 +110,7 @@ function Nav() {
           <NavLink onClick={() => scrollToTop()} to="/contact">
             <li>Contact</li>
           </NavLink>
-        </div>
+        </ul>
         <div onClick={handleMobileNav} className={"hamburger-container"}>
           <Hamburger
             toggled={mobileNav}
