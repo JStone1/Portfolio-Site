@@ -11,8 +11,9 @@ const Projects = () => {
           title="Projects"
           desc="A collection of commercial and university creations"
           imageURL="/assets/beach-large.webp"
-          isReverse={true}
           srcSet="/assets/beach-small.webp"
+          imageAlt="John Stone standing on a beach, looking out at the sea"
+          isReverse={true}
         />
         <SectionTitle
           title="My work"

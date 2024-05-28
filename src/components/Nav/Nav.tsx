@@ -59,6 +59,7 @@ function Nav() {
             <div className="cta-image-container">
               <a
                 target="blank"
+                aria-label="Visit my GitHub profile"
                 className="cta-image"
                 href="https://github.com/JStone1"
               >
@@ -66,6 +67,7 @@ function Nav() {
               </a>
               <a
                 target="blank"
+                aria-label="Visit my LinkedIn profile"
                 className="cta-image"
                 href="https://www.linkedin.com/in/john-stone-50065618b"
               >

@@ -7,7 +7,7 @@ function Header() {
     <>
       <header>
         <div className="logo-title-container">
-          <NavLink to="/">
+          <NavLink aria-label="John Stone" to="/">
             <svg
               className="logo"
               width="72"

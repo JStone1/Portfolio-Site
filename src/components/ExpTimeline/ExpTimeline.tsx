@@ -102,7 +102,7 @@ function ExpTimeline({}: Props) {
               I'm now seeking the next opportunity to apply my knowledge and
               contribute to the creation of exceptional projects. If this aligns
               with you, please feel free to {""}
-              <NavLink to="/contact">
+              <NavLink aria-label="Contact John Stone" to="/contact">
                 <span id="highlight-link-text" className="highlight-text">
                   get in touch!
                 </span>

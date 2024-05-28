@@ -8,10 +8,11 @@ interface Props {
   desc: string;
   imageURL: string;
   srcSet: string;
+  imageAlt: string;
   isReverse?: boolean;
 }
 
-function Hero({ isReverse, title, desc, imageURL, srcSet }: Props) {
+function Hero({ isReverse, title, desc, imageURL, imageAlt, srcSet }: Props) {
   let reverse = "";
 
   const imgCardVariants = {
@@ -41,7 +42,7 @@ function Hero({ isReverse, title, desc, imageURL, srcSet }: Props) {
             animate="visible"
           >
             <source media="(max-width: 425px)" srcSet={srcSet} />
-            <img className="hero-image" src={imageURL} />
+            <img alt={imageAlt} className="hero-image" src={imageURL} />
           </motion.picture>
         </div>
       </section>

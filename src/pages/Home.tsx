@@ -13,6 +13,7 @@ const Home = () => {
           desc="Web Developer and Creative Technologist"
           imageURL="/assets/profile-img-large.webp"
           srcSet="/assets/profile-img-small.webp"
+          imageAlt="Headshot of John Stone, a front end developer"
         />
         <SectionTitle
           title={

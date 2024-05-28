@@ -7,13 +7,22 @@ interface Props {
   title: string;
   desc: string;
   img: string;
+  imgAlt: string;
   languages: string[];
   projectType: "professional" | "personal";
   siteURL?: string;
   gitURL?: string;
 }
 
-function ProjectEntry({ title, desc, img, languages, siteURL, gitURL }: Props) {
+function ProjectEntry({
+  title,
+  desc,
+  img,
+  imgAlt,
+  languages,
+  siteURL,
+  gitURL,
+}: Props) {
   let projectLanguages = {
     lang1: languages[0],
     lang2: languages[1],
