@@ -33,10 +33,7 @@ function ProjectEntry({
   return (
     <>
       <motion.article initial={{ opacity: 1 }} className="project-entry">
-        <div
-          className="project-image"
-          style={{ backgroundImage: `url(${img})` }}
-        ></div>
+        <img alt={imgAlt} className="project-image" src={img} />
         <div className="project-card">
           <h2>{title}</h2>
           <p>{desc}</p>

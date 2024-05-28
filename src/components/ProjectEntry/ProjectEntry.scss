@@ -15,11 +15,8 @@
 .project-image {
   width: calc(60% + 10%);
   min-height: 200px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-  // border: 1px solid $primary-colour;
   box-shadow: 1px -5px 8px #a3a3a3;
   border-bottom: none;
   transition: none !important;
