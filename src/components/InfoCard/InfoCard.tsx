@@ -29,7 +29,7 @@ function InfoCard({ title, desc }: Props) {
       >
         <h1>{title}</h1>
         <hr className="divider"></hr>
-        <h3>{desc}</h3>
+        <h2>{desc}</h2>
       </motion.div>
     </>
   );
