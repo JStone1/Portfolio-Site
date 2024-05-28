@@ -36,11 +36,8 @@
   }
 }
 
-.hero-image-container {
-  // background-image: url(../../assets/profile-img.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.hero-image {
+  object-fit: cover;
   border-radius: 10px;
   width: 400px;
   height: 400px;

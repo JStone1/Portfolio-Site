@@ -10,8 +10,9 @@ const Home = () => {
       <Layout footerMargin={250}>
         <Hero
           title="John Stone"
-          desc="Web Developer and Creative Technologist "
-          imageURL="/assets/profile-img.webp"
+          desc="Web Developer and Creative Technologist"
+          imageURL="/assets/profile-img-large.webp"
+          srcSet="/assets/profile-img-small.webp"
         />
         <SectionTitle
           title={

@@ -7,10 +7,11 @@ interface Props {
   title: string;
   desc: string;
   imageURL: string;
+  srcSet: string;
   isReverse?: boolean;
 }
 
-function Hero({ isReverse, title, desc, imageURL }: Props) {
+function Hero({ isReverse, title, desc, imageURL, srcSet }: Props) {
   let reverse = "";
 
   const imgCardVariants = {
@@ -34,13 +35,14 @@ function Hero({ isReverse, title, desc, imageURL }: Props) {
             <InfoCard title={title} desc={desc} />
             <ThemeSwitcher></ThemeSwitcher>
           </div>
-          <motion.div
+          <motion.picture
             variants={imgCardVariants}
             initial="hidden"
             animate="visible"
-            style={{ backgroundImage: `url(${imageURL})` }}
-            className="hero-image-container"
-          ></motion.div>
+          >
+            <source media="(max-width: 425px)" srcSet={srcSet} />
+            <img className="hero-image" src={imageURL} />
+          </motion.picture>
         </div>
       </section>
     </>
