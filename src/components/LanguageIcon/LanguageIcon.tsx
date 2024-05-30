@@ -28,6 +28,7 @@ function LanguageIcon({ lang, title, shouldAnimate, size }: Props) {
   return (
     <span>
       <i
+        title={title}
         style={{ fontSize: size }}
         className={`devicon-${lang} language-icon`}
       ></i>

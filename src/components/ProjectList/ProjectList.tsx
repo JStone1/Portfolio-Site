@@ -14,6 +14,7 @@ const projects = [
     img="/assets/portfolio-thumbnail.png"
     imgAlt="Screenshot of Portfolio project, displaying the homescreen"
     languages={["react-plain", "typescript-plain", "sass-plain", "figma-plain"]}
+    languageNames={["React", "TypeScript", "Sass", "Figma"]}
     projectType="personal"
     siteURL="/"
     gitURL="https://github.com/JStone1/Portfolio-Site"
@@ -29,6 +30,7 @@ const projects = [
       "javascript-plain",
       "figma-plain",
     ]}
+    languageNames={["WordPress", "PHP", "JavaScript", "Figma"]}
     projectType="professional"
     siteURL="https://www.bsucomputing.co.uk/"
   />,
@@ -38,6 +40,7 @@ const projects = [
     img="/assets/podcast-thumbnail.jpg"
     imgAlt="Screenshot of Podcasting Toolkit project, displaying a vertical list of podcast entries"
     languages={["wordpress-plain", "javascript-plain"]}
+    languageNames={["WordPress", "JavaScript"]}
     projectType="professional"
     siteURL="https://podcastingtoolkit.co.uk/"
   />,
@@ -53,6 +56,7 @@ const projects = [
       "nodejs-plain-wordmark",
       "mongodb-plain",
     ]}
+    languageNames={["Sass", "JavaScript", "Node.js", "MongoDB"]}
     projectType="personal"
     gitURL="https://github.com/JStone1/Mate-Rate"
     siteURL="https://mate-rate.glitch.me/"
@@ -68,6 +72,7 @@ const projects = [
       "javascript-plain",
       "threejs-original-wordmark",
     ]}
+    languageNames={["HTML", "Sass", "JavaScript", "Three.js"]}
     projectType="personal"
     gitURL="https://github.com/JStone1/Deep-Dive"
     siteURL="https://jstone1.github.io/Deep-Dive/"
@@ -78,6 +83,7 @@ const projects = [
     img="/assets/killingblow-thumbnail.jpg"
     imgAlt="Screenshot of Killing Blow project, displaying a project title with a red spaceship and a pink alien"
     languages={["javascript-plain"]}
+    languageNames={["JavaScript"]}
     projectType="personal"
     siteURL="https://jstone1.itch.io/killing-blow"
   />,
@@ -92,6 +98,7 @@ const projects = [
       "javascript-plain",
       "p5js-original",
     ]}
+    languageNames={["HTML", "CSS", "JavaScript", "p5.js"]}
     projectType="personal"
     gitURL="https://github.com/JStone1/Sign-Learn"
     siteURL="https://jstone1.github.io/Sign-Learn/"

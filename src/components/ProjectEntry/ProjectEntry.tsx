@@ -9,6 +9,7 @@ interface Props {
   img: string;
   imgAlt: string;
   languages: string[];
+  languageNames: string[];
   projectType: "professional" | "personal";
   siteURL?: string;
   gitURL?: string;
@@ -20,16 +21,10 @@ function ProjectEntry({
   img,
   imgAlt,
   languages,
+  languageNames,
   siteURL,
   gitURL,
 }: Props) {
-  let projectLanguages = {
-    lang1: languages[0],
-    lang2: languages[1],
-    lang3: languages[2],
-    lang4: languages[3],
-  };
-
   return (
     <>
       <motion.article initial={{ opacity: 1 }} className="project-entry">
@@ -45,19 +40,23 @@ function ProjectEntry({
           <div className="project-languages">
             <LanguageIcon
               shouldAnimate={false}
-              lang={projectLanguages.lang1}
+              lang={languages[0]}
+              title={languageNames[0]}
             ></LanguageIcon>
             <LanguageIcon
               shouldAnimate={false}
-              lang={projectLanguages.lang2}
+              lang={languages[1]}
+              title={languageNames[1]}
             ></LanguageIcon>
             <LanguageIcon
               shouldAnimate={false}
-              lang={projectLanguages.lang3}
+              lang={languages[2]}
+              title={languageNames[2]}
             ></LanguageIcon>
             <LanguageIcon
               shouldAnimate={false}
-              lang={projectLanguages.lang4}
+              lang={languages[3]}
+              title={languageNames[3]}
             ></LanguageIcon>
           </div>
           <div className="project-buttons">
