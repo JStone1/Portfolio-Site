@@ -136,4 +136,9 @@
   .snackbar {
     border-color: $accent;
   }
+  .privacy-link {
+    &:hover {
+      text-decoration-color: $accent;
+    }
+  }
 }

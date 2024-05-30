@@ -42,3 +42,11 @@ footer {
     font-size: 36px;
   }
 }
+
+.privacy-link {
+  font-size: 14px;
+  color: $secondary-colour;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.3em;
+}

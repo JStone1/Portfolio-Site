@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import { NavLink } from "react-router-dom";
 
 interface Props {
   topMargin: number;
@@ -30,7 +31,12 @@ function Footer({ topMargin }: Props) {
               fill="#E7ECEF"
             />
           </svg>
-          <p>{"© " + new Date().getFullYear() + " John Stone"}</p>
+          <div style={{ textAlign: "left" }}>
+            <p>{"© " + new Date().getFullYear() + " John Stone"}</p>
+            <NavLink className="privacy-link" to="/privacy-policy">
+              Privacy Policy
+            </NavLink>
+          </div>
         </div>
 
         <div className="social-container">
