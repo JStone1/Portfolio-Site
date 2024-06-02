@@ -25,11 +25,11 @@ const Home = () => {
             </>
           }
           desc={[
-            "Primarily specialising in ",
+            "Currently based in Hampshire, I primarily specialise in ",
             <span key="highligh-text-key" className="highlight-text">
               front-end development
             </span>,
-            ", my goal is to create outstanding user experiences on the web. I love learning new technologies and have experimented with many before, always eager to explore something new. Outside of that, I enjoy playing table tennis, badminton, and walking along the beautiful south coast!",
+            ", and my goal is to create outstanding user experiences on the web. I love learning new technologies and have experimented with many before, always eager to explore something new. Outside of that, I enjoy playing table tennis, badminton, and walking along the beautiful south coast!",
           ]}
           background={false}
         />
