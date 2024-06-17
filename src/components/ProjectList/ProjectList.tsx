@@ -47,7 +47,7 @@ const projects = [
 
   <ProjectEntry
     title="Mate Rate"
-    desc="Mate Rate is a web app that takes a satirical view on standard social media. Built with Express.js, and Mongo as the backend, user's seek the approval of others via a post rating system."
+    desc="Mate Rate is a web app that takes a satirical view on standard social media. Built with Express.js, and Mongo as the backend, users seek the approval of others via a post rating system."
     img="/assets/materate-thumbnail.jpg"
     imgAlt="Screenshot of Mate Rate project, displaying app information and login screen"
     languages={[
@@ -63,7 +63,7 @@ const projects = [
   />,
   <ProjectEntry
     title="Deep Dive"
-    desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles. An fun experiment in Three.js, that hopes to raise penguin awareness."
+    desc="Deep Dive is an interactive website, with 3D elements, that follows the journey of a penguin through it's daily struggles. A fun experiment in Three.js, that hopes to raise penguin awareness."
     img="/assets/deepdive-thumbnail.jpg"
     imgAlt="Screenshot of Deep Dive project, displaying a 3D model of a penguin looking at a 3D model of a shark underwater"
     languages={[
